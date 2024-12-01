@@ -11,9 +11,11 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D., Computer Science, University of Alabama at Birmingham, advisor Dr. Qing Tian 1/2024 – 5/2025 (expected)
+* Ph.D. Student, Data Science Bowling Green State University, advisor Dr. Qing Tian 8/2019 — 12/2024
+* M.S. of Science in Analytics, Bowling Green State University 8/2018 — 7/2019
+* B.S. of Science in Business Analytics and Intelligence, Bowling Green State University 8/2017 — 6/2018
+* B.S. of Science in Management Information Systems, TianJin Polytechnic University 9/2014 — 6/2018
 
 Work experience
 ======

@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{% https://lanqz7766.github.io/ %}
+{% %}
 
 Education
 ======

@@ -6,7 +6,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Qizhen Lan is a PhD candidate in Computer Science at the University of Alabama at Birmingham, AL, USA. He expects to obtain his Ph.D. in 2025. His primary research interests lie in Computer Vision and Machine Learning, particularly neural network compression (Knowledge Distillation & Pruning), autonomous driving perception, and adversarial AI.
+Qizhen Lan is a PhD candidate in Computer Science at the University of Alabama at Birmingham, AL, USA. He expects to obtain his Ph.D. in 2025 Spring. His primary research interests lie in Computer Vision and Machine Learning, particularly neural network compression (Knowledge Distillation & Pruning), autonomous driving perception, and adversarial AI. 
+
+*Research Interests
+My current focus is on designing and developing state-of-the-art model compression techniques, such as knowledge distillation and pruning, to optimize the efficiency and accuracy of object detection models and let those complex models become feasible to embed into simple devices (dashcams, cell phones, etc.). Driven by a deep passion for expanding my knowledge and practical experience in this domain, I am dedicated to staying up-to-date with the latest industry advancements and trends. 
+
+*Publications
+Lan, Qizhen, and Qing Tian. "Instance, scale, and teacher adaptive knowledge distillation for visual detection in autonomous driving." IEEE Transactions on Intelligent Vehicles 8.3 (2022): 2358-2370.
+
+Lan, Qizhen, and Qing Tian. "Gradient-Guided Knowledge Distillation for Object Detectors." Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2024.
 
 <div style="display:none">
 This is the front page of a website that is powered by the [Academic Pages template]#(https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!

@@ -281,7 +281,12 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
+# These settings control how pages and collections are included in the site_remove
+exclude:
+  - _teaching
+  - _publications
+  - _portfolio
+  - _talks
 
 # Sass/SCSS
 sass:

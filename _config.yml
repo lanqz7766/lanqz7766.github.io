@@ -213,7 +213,7 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: false
+    output: true
     permalink: /:collection/:path/
   publications:
     output: true
@@ -282,6 +282,11 @@ defaults:
   #     author_profile: true
   #     share: true
 # These settings control how pages and collections are included in the site_remove
+exclude:
+  - _teaching
+  - _publications
+  - _portfolio
+  - _talks
 
 
 # Sass/SCSS

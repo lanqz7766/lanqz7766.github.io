@@ -22,13 +22,13 @@ repository               : "lanqz7766/lanqz7766.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Qizhen Lan"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PhD candidate in Computer Science at the University of Alabama at Birmingham"
   location         : "Birmingham, AL"
   employer         : "University of Alabama at Birmingham"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "qlan@uab.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile

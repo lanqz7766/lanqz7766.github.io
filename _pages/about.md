@@ -1,11 +1,12 @@
 ---
 permalink: /
-title: "Qizhen Lan--PhD candidate in Computer Science at the University of Alabama at Birmingham"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
 Qizhen Lan is a PhD candidate in Computer Science at the University of Alabama at Birmingham, AL, USA. He expects to obtain his Ph.D. in 2025 Spring. His primary research interests lie in Computer Vision and Machine Learning, particularly neural network compression (Knowledge Distillation & Pruning), autonomous driving perception, and adversarial AI. 
 
 ## Research Interests

@@ -8,10 +8,10 @@ redirect_from:
 ---
 Qizhen Lan is a PhD candidate in Computer Science at the University of Alabama at Birmingham, AL, USA. He expects to obtain his Ph.D. in 2025 Spring. His primary research interests lie in Computer Vision and Machine Learning, particularly neural network compression (Knowledge Distillation & Pruning), autonomous driving perception, and adversarial AI. 
 
-##Research Interests
+## Research Interests
 My current focus is on designing and developing state-of-the-art model compression techniques, such as knowledge distillation and pruning, to optimize the efficiency and accuracy of object detection models and let those complex models become feasible to embed into simple devices (dashcams, cell phones, etc.). Driven by a deep passion for expanding my knowledge and practical experience in this domain, I am dedicated to staying up-to-date with the latest industry advancements and trends. 
 
-##Publications
+## Publications
 * Lan, Q., & Tian, Q. (2022). Instance, scale, and teacher adaptive knowledge distillation for visual detection in autonomous driving. IEEE Transactions on Intelligent Vehicles, 8(3), 2358-2370.
 * Lan, Q., & Tian, Q. (2024). Gradient-Guided Knowledge Distillation for Object Detectors. In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (pp. 424-433).
 * Lan, Q., & Tian, Q. (2022, August). Adaptive instance distillation for object detection in autonomous driving. In 2022 26th International Conference on Pattern Recognition (ICPR) (pp. 4559-4565). IEEE.
@@ -21,6 +21,8 @@ My current focus is on designing and developing state-of-the-art model compressi
 * Sprague, J. E., Yeh, A. B., Lan, Q., Vieson, J., & McCorkle, M. (2022). COVID-19 economic impact payments and opioid overdose deaths. International Journal of Drug Policy, 102, 103608.
 * Choi, J. I., Lee, J., Yeh, A. B., Lan, Q., & Kang, H. (2022). Spatial clustering of heroin-related overdose incidents: a case study in Cincinnati, Ohio. BMC public health, 22(1), 1253.
 * Lee, J., Choi, J. I., Yeh, A., Lan, Q., & Kang, H. (2022). Geospatial Clustering Analysis on Drug Abuse Emergencies.
+
+
 
 <div style="display:none">
 This is the front page of a website that is powered by the [Academic Pages template]#(https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!

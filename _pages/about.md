@@ -7,10 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-Qizhen Lan is a PhD candidate in Computer Science at the University of Alabama at Birmingham, AL, USA. He expects to obtain his Ph.D. in 2025 Spring. His primary research interests lie in Computer Vision and Machine Learning, particularly neural network compression (Knowledge Distillation & Pruning), autonomous driving perception, and adversarial AI. 
+Qizhen Lan is a PhD candidate in Computer Science at the University of Alabama at Birmingham, AL, USA. He expects to obtain his Ph.D. degree in 2025 Spring. His primary research interests lie in Computer Vision and Machine Learning, particularly neural network compression (Knowledge Distillation & Pruning), autonomous driving perception, and adversarial AI. 
 
 ## Research Interests
-My current focus is on designing and developing state-of-the-art model compression techniques, such as knowledge distillation and pruning, to optimize the efficiency and accuracy of object detection models and let those complex models become feasible to embed into simple devices (dashcams, cell phones, etc.). Driven by a deep passion for expanding my knowledge and practical experience in this domain, I am dedicated to staying up-to-date with the latest industry advancements and trends. 
+My current focus is on designing and developing state-of-the-art model compression techniques, such as knowledge distillation and pruning, to optimize the efficiency and accuracy of object detection models and make those complex models feasible to embed into simple devices (dashcams, cell phones, etc.). Driven by a deep passion for expanding my knowledge and practical experience in this domain, I am dedicated to staying up-to-date with the latest industry advancements and trends. 
 
 ## Publications
 * Lan, Q., & Tian, Q. (2022). Instance, scale, and teacher adaptive knowledge distillation for visual detection in autonomous driving. IEEE Transactions on Intelligent Vehicles, 8(3), 2358-2370.

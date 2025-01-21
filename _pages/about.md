@@ -13,16 +13,21 @@ Qizhen Lan is a PhD candidate in Computer Science at the University of Alabama a
 My current focus is on designing and developing state-of-the-art model compression techniques, such as knowledge distillation and pruning, to optimize the efficiency and accuracy of object detection models and make those complex models feasible to embed into simple devices (dashcams, cell phones, etc.). Driven by a deep passion for expanding my knowledge and practical experience in this domain, I am dedicated to staying up-to-date with the latest industry advancements and trends. 
 
 ## Publications
-* Lan, Q., & Tian, Q. (2022). Instance, scale, and teacher adaptive knowledge distillation for visual detection in autonomous driving. IEEE Transactions on Intelligent Vehicles, 8(3), 2358-2370.
-* Lan, Q., & Tian, Q. (2024). Gradient-Guided Knowledge Distillation for Object Detectors. In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (pp. 424-433).
-* Lan, Q., & Tian, Q. (2022, August). Adaptive instance distillation for object detection in autonomous driving. In 2022 26th International Conference on Pattern Recognition (ICPR) (pp. 4559-4565). IEEE.
-* Wang, W., Xiao, X., Liu, M., Tian, Q., Huang, X., Lan, Q., ... & Wang, T. (2024). Multi-dimension Transformer with Attention-based Filtering for Medical Image Segmentation. arXiv preprint arXiv:2405.12328. (accepted to ICTAI 2024)
-* Zhu, L., Lan, Q., Velasquez, A., Song, H., Kamal, A., Tian, Q., & Niu, S. (2023, December). SKGHOI: Spatial-Semantic Knowledge Graph for Human-Object Interaction Detection. In 2023 IEEE International Conference on Data Mining Workshops (ICDMW) (pp. 1186-1193). IEEE.
-* Vieson, J., Yeh, A. B., Lan, Q., & Sprague, J. E. (2022). During the COVID-19 pandemic, opioid overdose deaths revert to previous record levels in Ohio. Journal of addiction medicine, 16(2), e118-e122.
-* Sprague, J. E., Yeh, A. B., Lan, Q., Vieson, J., & McCorkle, M. (2022). COVID-19 economic impact payments and opioid overdose deaths. International Journal of Drug Policy, 102, 103608.
-* Choi, J. I., Lee, J., Yeh, A. B., Lan, Q., & Kang, H. (2022). Spatial clustering of heroin-related overdose incidents: a case study in Cincinnati, Ohio. BMC public health, 22(1), 1253.
-* Lee, J., Choi, J. I., Yeh, A., Lan, Q., & Kang, H. (2022). Geospatial Clustering Analysis on Drug Abuse Emergencies.
-
+* Q. Lan, and Q. Tian, “CLoCKDistill: Consistent Location-and-Context-aware Knowledge Distillation for DETRs.” Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025. (Under Review)
+* Q. Lan, J. Im Choi, and Q. Tian, “Visual Detector Compression via Location-Aware Discriminant Analysis.” International Conference on Computer Vision (ICCV), 2025 (Under Preparation).
+* J. Im Choi, Q. Lan and Q. Tian, “Improving Deep Detector Robustness via Detection-Related Discriminant Maximization and Reorganization.” In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2025.
+* J. Im Choi, Q. Lan, and Q. Tian, “Efficient and Robust Deep Visual Detection via Location-Aware Discriminant Training.” IEEE Transactions on Neural Networks and Learning Systems, 2025. (Submitted).
+* Q. Lan and Q. Tian. “Gradient-Guided Knowledge Distillation for Object Detectors.” In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024.
+* W. Wang, X. Xiao, M. Liu, Q. Tian, X. Huang, Q. Lan, S. W. Roy & T. Wang, “Multi-dimension Transformer with Attention-based Filtering for Medical Image Segmentation.” The IEEE International Conference on Tools with Artificial Intelligence (ICTAI), 2024.
+* L. Zhu, Q. Lan, A. Velasquez, H. Song, A. Kamal, Q. Tian, & S. Niu, “SKGHOI: Spatial-Semantic Knowledge Graph for Human-Object Interaction Detection.” IEEE International Conference on Data Mining Workshops (ICDMW), 2023.
+* Q. Lan and Q. Tian, “Instance, scale, and teacher adaptive knowledge distillation for visual detection in autonomous driving.” IEEE Transactions on Intelligent Vehicles (T-IV), 2022.
+* Q. Lan and Q. Tian, “Adaptive instance distillation for object detection in autonomous driving,” in 26th International Conference on Pattern Recognition (ICPR), 2022.
+* J. Vieson, A. B. Yeh, Q. Lan, & J. E. Sprague, “During the COVID-19 pandemic, opioid overdose deaths revert to previous record levels in Ohio.”  Journal of Addiction Medicine, 2022.
+* J. E. Sprague, A. B. Yeh, Q. Lan, J. Vieson, & M. McCorkle, “COVID-19 economic impact payments and opioid overdose deaths.” International Journal of Drug Policy, 2022.
+* J. Lee, J. Im Choi, A. Yeh, Q. Lan, and H. Kang, “Geospatial clustering analysis on drug abuse emergencies.” Proceedings of the 55th Annual Hawaii International Conference on System Sciences (HICSS), 2022.
+* J. Im Choi, J. Lee, A. B. Yeh, Q. Lan, & H. Kang, “Spatial clustering of heroin-related overdose incidents: a case study in Cincinnati, Ohio.” BMC Public Health, 2022.
+  
+![image](https://github.com/user-attachments/assets/c0cb30b4-45dc-4a1d-ad80-1b8cd1ecbb3c)
 
 
 <div style="display:none">

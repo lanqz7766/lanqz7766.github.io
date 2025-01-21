@@ -26,8 +26,6 @@ My current focus is on designing and developing state-of-the-art model compressi
 * J. E. Sprague, A. B. Yeh, Q. Lan, J. Vieson, & M. McCorkle, “COVID-19 economic impact payments and opioid overdose deaths.” International Journal of Drug Policy, 2022.
 * J. Lee, J. Im Choi, A. Yeh, Q. Lan, and H. Kang, “Geospatial clustering analysis on drug abuse emergencies.” Proceedings of the 55th Annual Hawaii International Conference on System Sciences (HICSS), 2022.
 * J. Im Choi, J. Lee, A. B. Yeh, Q. Lan, & H. Kang, “Spatial clustering of heroin-related overdose incidents: a case study in Cincinnati, Ohio.” BMC Public Health, 2022.
-  
-![image](https://github.com/user-attachments/assets/c0cb30b4-45dc-4a1d-ad80-1b8cd1ecbb3c)
 
 
 <div style="display:none">

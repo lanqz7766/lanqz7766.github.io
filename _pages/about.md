@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 I am currently a Postdoctoral Research Fellow in the [Department of Ctr-Secure AI for Healthcare](https://sbmi.uth.edu/safe/) at The [University of Texas Health Science, Houston](https://www.uth.edu/), working under the supervision of [Dr. Xiaoqian Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm). Prior to this, I completed my PhD in Computer Science at the [University of Alabama at Birmingham](https://www.uab.edu/home/), where I had the honor of working with [Dr. Qing Tian](https://qtianreal.github.io/). My primary research interests lie in Computer Vision and Machine Learning, with a focus on AI model compression (including knowledge distillation and pruning), autonomous driving perception, and adversarial robustness. Recently, my work has also expanded into Medical AI, large-scale vision models, and multi-modal learning frameworks, driven by the growing demand for scalable and generalizable AI systems in complex real-world environments.
-\\
+
+
 
 I am always open to research collaborations and interdisciplinary projects, particularly in the areas of model efficiency, medical AI, and robust multi-modal systems. I am also actively seeking academic or industry opportunities where I can contribute my expertise and grow as a researcher. Please feel free to reach out if you are interested in collaborating or discussing potential opportunities.
 

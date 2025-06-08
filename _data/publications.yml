@@ -20,3 +20,14 @@ main:
     bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     notes: Oral Presentation
     image: ./assets/img/teaser_example.png
+
+  - title: "Instance, scale, and teacher adaptive knowledge distillation for visual detection in autonomous driving"
+    authors: <strong>Qizhen Lan</strong>, Qing Tian
+    conference_short: IEEE T-IV
+    conference: IEEE Transactions on Intelligent Vehicles <strong>(IEEE T-IV)</strong>, 2022.
+    pdf: https://par.nsf.gov/servlets/purl/10405166
+    # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
+    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # notes: Oral Presentation
+    image: ./assets/img/teaser_example.png

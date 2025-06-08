@@ -19,7 +19,7 @@ I am currently a Postdoctoral Research Fellow in the [Department of Ctr-Secure A
 - **[May. 2025]** I start my post-doc at [UTHealth, Houston](https://www.uth.edu/), with [Dr. Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm)
 - **[May. 2025]** I got my Ph.D. from [University of Alabama at Birmingham](https://www.uab.edu/home/)!
 - **[Mar. 2025]** Our paper about Object Tracking Distillation is accepted to IV 2025.
-- **[Oct. 2024]** Our paper about Detector Robustness is accepted to WACV 2025 — <span style="color:red;"><strong>Oral Presentation</strong></span>.
+- **[Oct. 2024]** Our paper about Detector Robustness is accepted to WACV 2025 — 🔥 **Oral Presentation**
 - **[Sept. 2024]** Our paper about Medical Image Segmentation is accepted to ICTAI 2024.
 - **[Jan. 2024]** I transfer with my advisor (Dr. Tian) to [University of Alabama at Birmingham](https://www.uab.edu/home/) as a computer science Ph.D student.
 - **[Oct. 2023]** Our paper about Gradient Distillation is accepted to WACV 2024.

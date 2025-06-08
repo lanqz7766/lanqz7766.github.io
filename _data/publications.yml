@@ -21,7 +21,10 @@ main:
   #   notes: Oral Presentation
   #   image: ./assets/img/teaser_example.png
 
-  
+
+
+
+
 
   - title: "ACAM-KD: Adaptive and Cooperative Attention Masking for Knowledge Distillation"
     authors: <strong>Qizhen Lan</strong>, Qing Tian
@@ -33,6 +36,17 @@ main:
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
     image: ./assets/img/ACAM-KD.png
+
+  - title: "Improving Deep Detector Robustness via Detection-Related Discriminant Maximization and Reorganization"
+    authors: Jung Im Choi, <strong>Qizhen Lan</strong>, Qing Tian
+    conference_short: WACV
+    conference: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2025.
+    pdf: https://openaccess.thecvf.com/content/WACV2025/papers/Choi_Improving_Deep_Detector_Robustness_via_Detection-Related_Discriminant_Maximization_and_Reorganization_WACV_2025_paper.pdf
+    # code: https://github.com/lanqz7766/GKD
+    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    notes: Oral Presentation
+    image: ./assets/img/DDMR.png
 
   - title: "CLoCKDistill: Consistent Location-and-Context-aware Knowledge Distillation for DETRs"
     authors: <strong>Qizhen Lan</strong>, Qing Tian

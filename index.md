@@ -10,14 +10,22 @@ I am currently a Postdoctoral Research Fellow in the [Department of Ctr-Secure A
 ## Research Interests
 
 - **Computer Vision:** Object Detection, Tracking, Segmentaion, 3D image/video recognition
-- **Model Compression:** Knowledge Distillation, Network Pruning
+- **Model Compression/Acceleration:** Knowledge Distillation, Network Pruning
+- **Privacy-Preserving Learning:** Federated Learning, Adversarial Attack/Training
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[May. 2025]** Our paper about Knowledge Graph learning is accepted to ECML-PKDD 2025.
+- **[May. 2025]** I start my post-doc at [UTHealth, Houston](https://www.uth.edu/), with [Dr. Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm)
+- **[May. 2025]** I got my Ph.D. from [University of Alabama at Birmingham](https://www.uab.edu/home/)!
+- **[Mar. 2025]** Our paper about Object Tracking Distillation is accepted to IV 2025.
+- **[Oct. 2024]** Our paper about Detector Robustness is accepted to WACV 2025 — <span style="color:red;"><strong>Oral Presentation</strong></span>.
+- **[Sept. 2024]** Our paper about Medical Image Segmentation is accepted to ICTAI 2024.
+- **[Jan. 2024]** I transfer with my advisor (Dr. Tian) to [University of Alabama at Birmingham](https://www.uab.edu/home/) as a computer science Ph.D student.
+- **[Oct. 2023]** Our paper about Gradient Distillation is accepted to WACV 2024.
+- **[Sept. 2023]** Our paper about HOI detection is accepted to ICDMW 2023.
+- **[Aug. 2022]** Our paper about Multiple Teacher Distillation is accepted to T-IV 2022.
+- **[May. 2022]** Our paper about Adaptive Instance Distillation is accepted to ICPR 2022.
 
 {% include_relative _includes/publications.md %}
 

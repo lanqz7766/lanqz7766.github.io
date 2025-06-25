@@ -36,7 +36,7 @@ main:
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
     image: ./assets/img/ACAM-KD.png
-    notes: Early Accept
+    # notes: Early Accept
 
   - title: "Improving Deep Detector Robustness via Detection-Related Discriminant Maximization and Reorganization"
     authors: Jung Im Choi, <strong>Qizhen Lan</strong>, Qing Tian

@@ -18,6 +18,7 @@ I am happy to collaborate and/or answer questions about my research and my previ
 
 ## News
 
+- **[May. 2025]** One paper about Knowledge Distillation is accepted to ICCV 2025.
 - **[May. 2025]** Our paper about Knowledge Graph learning is accepted to ECML-PKDD 2025.
 - **[May. 2025]** I start my post-doc at [UTHealth, Houston](https://www.uth.edu/), with [Dr. Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm)
 - **[May. 2025]** I got my Ph.D. from [University of Alabama at Birmingham](https://www.uab.edu/home/)!

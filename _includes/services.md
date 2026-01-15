@@ -12,13 +12,8 @@
 
 <ul style="margin:0 0 20px;">
   <li>
-<a href="https://www.nature.com/npjdigmed/">
+<a href="[https://www.nature.com/npjdigmed/](https://www.nature.com/npjdigitalmed/)">
 <autocolor>npj Digital Medicine</autocolor>
-</a>
-</li>
-  <li>
-<a href="https://ieee-cas.org/publication/ieee-transactions-multimedia">
-<autocolor>IEEE Transactions on Multimedia (TMM)</autocolor>
 </a>
 </li>
   <li><a href="https://ieee-cas.org/publication/tcsvt"><autocolor>

@@ -12,12 +12,14 @@ I am happy to collaborate and/or answer questions about my research and my previ
 
 ## Research Interests
 
-- **Computer Vision:** Object Detection, Tracking, Segmentaion, 3D image/video recognition
-- **Model Compression/Acceleration:** Knowledge Distillation, Network Pruning
-- **Privacy-Preserving Learning:** Federated Learning, Adversarial Attack/Training
+- **Computer Vision:** Object Detection and Tracking, Human–Object Interaction (HOI), Medical Image Analysis, and Visual Generation.
+- **Model Compression/Acceleration:** Knowledge Distillation, Model Compression and Acceleration, Lightweight Vision Models for Resource-Constrained Deployment.
+- **Agentic and Adaptive Learning Systems**: Agentic Perception, Continual and Lifelong Learning, Decision-Aware and Task-Oriented Vision Models.
+- **Privacy-Preserving Learning:** Adversarial Robustness, Privacy-Preserving Learning, Federated and Distributed Learning.
 
 ## News
-
+- **[Jan. 2026]** One paper is accepted to WWW 2026.
+- **[Nov. 2025]** Two papers are accepted to WACV 2026.
 - **[May. 2025]** One paper about Knowledge Distillation is accepted to ICCV 2025.
 - **[May. 2025]** Our paper about Knowledge Graph learning is accepted to ECML-PKDD 2025.
 - **[May. 2025]** I start my post-doc at [UTHealth, Houston](https://www.uth.edu/), with [Dr. Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm)

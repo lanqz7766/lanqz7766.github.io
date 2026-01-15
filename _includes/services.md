@@ -4,7 +4,6 @@
 
 <ul style="margin:0 0 5px;">
   <li><a href="https://cvpr2026.thecvf.com/"><autocolor>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</autocolor></a></li>
-  <li><a href="http://cvpr2023.thecvf.com/"><autocolor>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023</autocolor></a></li>
   <li><a href="https://wacv2025.thecvf.com/"><autocolor>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025</autocolor></a></li>
 </ul>
 

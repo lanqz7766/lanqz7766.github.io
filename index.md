@@ -1,21 +1,19 @@
----
-layout: homepage
----
+--- layout: homepage ---
 
 ## About Me
 
-I am currently a Postdoctoral Research Fellow in the [McWilliams School of Biomedical Informatics](https://sbmi.uth.edu/) at The [University of Texas Health Science, Houston](https://www.uth.edu/), working under the supervision of [Dr. Xiaoqian Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm). Prior to this, I completed my PhD in Computer Science at the [University of Alabama at Birmingham](https://www.uab.edu/home/), where I had the honor of working with [Dr. Qing Tian](https://qtianreal.github.io/). My primary research interests lie in Computer Vision and Machine Learning, with a focus on AI model compression (including knowledge distillation and pruning), autonomous driving perception, and adversarial robustness. Recently, my work has also expanded into Medical AI, large-scale vision models, and multi-modal learning frameworks, driven by the growing demand for scalable and generalizable AI systems in complex real-world environments.
+I am currently a Postdoctoral Research Fellow in the [McWilliams School of Biomedical Informatics](https://sbmi.uth.edu/) at The [University of Texas Health Science Center at Houston](https://www.uth.edu/), working under the supervision of [Dr. Xiaoqian Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm). Prior to this, I completed my PhD in Computer Science at the [University of Alabama at Birmingham](https://www.uab.edu/home/), where I had the honor of working with [Dr. Qing Tian](https://qtianreal.github.io/). My PhD research interests lie in Computer Vision, with a focus on AI efficiency (including knowledge distillation and pruning), autonomous driving perception, and AI safety. Recently, my work has expanded into Medical AI, large-scale vision models, multi-modal learning frameworks, and agentic AI systems, driven by the growing demand for scalable, generalizable, and trustworthy AI in complex real-world environments. I am also passionate about bridging the gap between academic research and real-world impact, and I am actively exploring entrepreneurial opportunities to translate AI innovations into practical solutions.
 
 
-I am happy to collaborate and/or answer questions about my research and my previous study at UAB and current experience at UTHealth. If you are interested in research collaboration or have any inquiries about my experience, please send me an email.
+I am happy to collaborate and/or answer questions about my research and my previous study at UAB and current experience at UTHealth. If you are interested in research collaboration or have any inquiries, please send me an email.
 
 
 ## Research Interests
 
-- **Computer Vision:** Object Detection and Tracking, Human–Object Interaction (HOI), Medical Image Analysis, and Visual Generation.
-- **Model Compression/Acceleration:** Knowledge Distillation, Model Compression and Acceleration, Lightweight Vision Models for Resource-Constrained Deployment.
-- **Agentic and Adaptive Learning Systems**: Agentic Perception, Continual and Lifelong Learning, Decision-Aware and Task-Oriented Vision Models.
-- **Privacy-Preserving Learning:** Adversarial Robustness, Privacy-Preserving Learning, Federated and Distributed Learning.
+- **Computer Vision:** Object Detection and Tracking, Medical Image Analysis, Visual Generation, and Autonomous Driving Perception.
+- **Model Compression/Acceleration:** Knowledge Distillation, Model Pruning and Acceleration, Lightweight Vision Models for Resource-Constrained Deployment.
+- **Agentic and Adaptive Learning Systems:** Agentic Perception, Continual and Lifelong Learning, Decision-Aware and Task-Oriented Vision Models.
+- **AI Safety and Robustness:** Adversarial Robustness, AI Alignment and Safety, Trustworthy and Reliable AI Systems, Safe Deployment of Agentic AI.
 
 ## News
 - **[Apr. 2026]** One paper has been accepted to **ACL 2026 (Main Conference)**, see you in San Diego!.

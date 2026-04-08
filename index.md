@@ -10,10 +10,14 @@ layout: homepage
 
 I am currently a Postdoctoral Research Fellow in the [McWilliams School of Biomedical Informatics](https://sbmi.uth.edu/) at The [University of Texas Health Science Center at Houston](https://www.uth.edu/), working under the supervision of [Dr. Xiaoqian Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm). Prior to this, I completed my PhD in Computer Science at the [University of Alabama at Birmingham](https://www.uab.edu/home/), where I had the honor of working with [Dr. Qing Tian](https://qtianreal.github.io/). My PhD research interests lie in Computer Vision, with a focus on AI efficiency (including knowledge distillation and pruning), autonomous driving perception, and AI safety. Recently, my work has expanded into Medical AI, large-scale vision models, multi-modal learning frameworks, and agentic AI systems, driven by the growing demand for scalable, generalizable, and trustworthy AI in complex real-world environments. I am also passionate about bridging the gap between academic research and real-world impact, and I am actively exploring entrepreneurial opportunities to translate AI innovations into practical solutions.
 
-<div style="border: 1px solid #ccc; padding: 11px; background-color: #f9f9f9; color: #333; border-radius: 5px;">
-<strong style="color:#e74d3c;">
-I am happy to collaborate and/or answer questions about my research and my previous study at UAB and current experience at UTHealth. If you are interested in research collaboration or have any inquiries, please send me an email.
+<div style="border: 1px solid #e5e7eb; padding: 14px 16px; background-color: #fafafa; border-radius: 6px; margin: 20px 0;">
+  <p style="margin: 0; font-size: 15px; line-height: 1.6;">
+    <span style="color:#c0392b; font-weight: 600;">Collaboration:</span>
+    I welcome research collaborations and discussions related to my work in AI, medical imaging, and agentic systems.
+    If you are interested in collaboration or have any inquiries, please feel free to contact me via email.
+  </p>
 </div>
+
 
 ## Research Interests
 

@@ -18,12 +18,13 @@ I am happy to collaborate and/or answer questions about my research and my previ
 - **Privacy-Preserving Learning:** Adversarial Robustness, Privacy-Preserving Learning, Federated and Distributed Learning.
 
 ## News
-- **[Jan. 2026]** One paper has been accepted to ICLR 2026.
-- **[Jan. 2026]** One paper has been accepted to ICASSP 2026.
-- **[Jan. 2026]** One paper is accepted to WWW 2026.
-- **[Nov. 2025]** Two papers are accepted to WACV 2026.
-- **[May. 2025]** One paper about Knowledge Distillation is accepted to ICCV 2025.
-- **[May. 2025]** Our paper about Knowledge Graph learning is accepted to ECML-PKDD 2025.
+- * **[Apr. 2026]** One paper has been accepted to **ACL 2026 (Main Conference)**, see you in San Diego!.
+- **[Jan. 2026]** One paper has been accepted to **ICLR 2026**.
+- **[Jan. 2026]** One paper has been accepted to **ICASSP 2026**.
+- **[Jan. 2026]** One paper is accepted to **WWW 2026**.
+- **[Nov. 2025]** Two papers are accepted to **WACV 2026**.
+- **[May. 2025]** One paper about Knowledge Distillation is accepted to **ICCV 2025**.
+- **[May. 2025]** Our paper about Knowledge Graph learning is accepted to **ECML-PKDD 2025**.
 - **[May. 2025]** I start my post-doc at [UTHealth, Houston](https://www.uth.edu/), with [Dr. Jiang](https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm)
 - **[May. 2025]** I got my Ph.D. from [University of Alabama at Birmingham](https://www.uab.edu/home/)!
 - **[Mar. 2025]** Our paper about Object Tracking Distillation is accepted to IV 2025.

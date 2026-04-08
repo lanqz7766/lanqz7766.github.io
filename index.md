@@ -13,7 +13,7 @@ I am currently a Postdoctoral Research Fellow in the [McWilliams School of Biome
 <div style="border: 1px solid #ccc; padding: 11px; background-color: #f9f9f9; color: #333; border-radius: 5px;">
 <strong style="color:#e74d3c;">
 I am happy to collaborate and/or answer questions about my research and my previous study at UAB and current experience at UTHealth. If you are interested in research collaboration or have any inquiries, please send me an email.
-
+</div>
 
 ## Research Interests
 

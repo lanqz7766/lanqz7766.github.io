@@ -181,7 +181,7 @@ window.SITE_CONTENT = {
           title: "Uni-NTFM: A Unified Foundation Model for EEG Signal Representation Learning",
           authors: "Zhisheng Chen, Yingwei Zhang, Qizhen Lan, Tianyu Liu, Huacan Wang, Yi Ding, Ziyu Jia, Ronghao Chen, Kun Wang, Xinliang Zhou",
           venue: "ICLR 2026 Poster",
-          image: "assets/img/Uni-NTFM-main.png",
+          image: "assets/img/Uni-NTFM-main.png?v=20260528-13",
           links: [{ label: "Paper", url: "https://arxiv.org/pdf/2509.24222" }]
         },
         {

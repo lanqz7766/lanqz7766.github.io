@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-label="PersonaTrace publication thumbnail">
+  <rect width="960" height="560" fill="#f8fbfc"/>
+  <rect x="78" y="86" width="210" height="140" rx="12" fill="#ffffff" stroke="#cbd8df" stroke-width="4"/>
+  <rect x="375" y="86" width="210" height="140" rx="12" fill="#ffffff" stroke="#cbd8df" stroke-width="4"/>
+  <rect x="672" y="86" width="210" height="140" rx="12" fill="#ffffff" stroke="#cbd8df" stroke-width="4"/>
+  <path d="M288 156h87M585 156h87" stroke="#1772a8" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="183" cy="142" r="30" fill="#dcecf2" stroke="#1772a8" stroke-width="5"/>
+  <path d="M138 190c18-28 47-42 45-42s27 14 45 42" fill="none" stroke="#1772a8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M425 128h110M425 156h80M425 184h120" stroke="#5b6872" stroke-width="8" stroke-linecap="round"/>
+  <rect x="720" y="122" width="114" height="68" rx="8" fill="#e8edf5" stroke="#6c7a96" stroke-width="5"/>
+  <path d="M175 288v52M480 288v52M777 288v52" stroke="#b33a3a" stroke-width="8" stroke-linecap="round"/>
+  <rect x="112" y="340" width="136" height="74" rx="10" fill="#fff" stroke="#d9dde3" stroke-width="4"/>
+  <rect x="412" y="340" width="136" height="74" rx="10" fill="#fff" stroke="#d9dde3" stroke-width="4"/>
+  <rect x="708" y="340" width="136" height="74" rx="10" fill="#fff" stroke="#d9dde3" stroke-width="4"/>
+  <path d="M248 377h164M548 377h160" stroke="#1772a8" stroke-width="8" stroke-linecap="round"/>
+  <text x="480" y="482" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#26343f">Evidence-Grounded Person-Centric Long-Video Understanding</text>
+</svg>

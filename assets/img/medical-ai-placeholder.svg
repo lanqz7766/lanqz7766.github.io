@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Medical AI publication thumbnail">
+  <rect width="960" height="600" fill="#edf4f7"/>
+  <rect x="70" y="72" width="820" height="456" rx="18" fill="#ffffff" stroke="#c8d8e0"/>
+  <path d="M184 392c56-52 113-77 171-75 67 2 116 49 175 50 56 1 103-37 151-101 32-43 63-70 95-82" fill="none" stroke="#1f6f8b" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="353" cy="317" r="54" fill="#d8e7ec" stroke="#1f6f8b" stroke-width="10"/>
+  <circle cx="532" cy="367" r="42" fill="#f4dfd4" stroke="#b55e45" stroke-width="10"/>
+  <text x="480" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#243442">3D Medical Image Segmentation</text>
+  <text x="480" y="482" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#5f6b78">Replace with your paper teaser image</text>
+</svg>

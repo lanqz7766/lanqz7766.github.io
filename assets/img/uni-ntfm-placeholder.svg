@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-label="Uni-NTFM publication thumbnail">
+  <rect width="960" height="560" fill="#f7fafb"/>
+  <path d="M170 292c36-120 94-180 174-180 58 0 92 34 136 86 43 50 77 84 136 84 77 0 130-56 174-168" fill="none" stroke="#1772a8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M170 292c42 92 101 138 176 138 59 0 93-30 135-75 43-47 76-76 133-76 78 0 134 49 176 149" fill="none" stroke="#b33a3a" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="344" cy="112" r="42" fill="#e2f1f6" stroke="#1772a8" stroke-width="7"/>
+  <circle cx="616" cy="282" r="42" fill="#f7e6e6" stroke="#b33a3a" stroke-width="7"/>
+  <rect x="250" y="360" width="460" height="72" rx="14" fill="#ffffff" stroke="#cbd8df" stroke-width="4"/>
+  <path d="M302 396h70M412 396h70M522 396h70M632 396h28" stroke="#5b6872" stroke-width="8" stroke-linecap="round"/>
+  <text x="480" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#26343f">Unified EEG Foundation Model</text>
+</svg>

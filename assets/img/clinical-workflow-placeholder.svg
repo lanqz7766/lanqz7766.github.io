@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Clinical workflow publication thumbnail">
+  <rect width="960" height="600" fill="#f6f8fa"/>
+  <rect x="80" y="96" width="210" height="120" rx="16" fill="#ffffff" stroke="#cfd8df" stroke-width="4"/>
+  <rect x="374" y="96" width="210" height="120" rx="16" fill="#ffffff" stroke="#cfd8df" stroke-width="4"/>
+  <rect x="668" y="96" width="210" height="120" rx="16" fill="#ffffff" stroke="#cfd8df" stroke-width="4"/>
+  <rect x="228" y="340" width="210" height="120" rx="16" fill="#ffffff" stroke="#cfd8df" stroke-width="4"/>
+  <rect x="522" y="340" width="210" height="120" rx="16" fill="#ffffff" stroke="#cfd8df" stroke-width="4"/>
+  <path d="M290 156h84M584 156h84M479 216v124M438 400h84" stroke="#1f6f8b" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <text x="185" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#243442">Data</text>
+  <text x="479" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#243442">Model</text>
+  <text x="773" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#243442">Clinical</text>
+  <text x="333" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#243442">Deploy</text>
+  <text x="627" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#243442">Report</text>
+  <text x="480" y="532" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#5f6b78">Replace with workflow figure</text>
+</svg>

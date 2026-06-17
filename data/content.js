@@ -74,8 +74,8 @@ window.SITE_CONTENT = {
       items: [
         {
           date: "May",
-          text: "Two papers were provisionally accepted to MICCAI 2026 in the top 9% among 4,601 submissions.",
-          highlightText: "top 9% among 4,601 submissions."
+          text: "Four papers were accepted to MICCAI 2026 (5 submissions, 4 accepted), including two early accepts.",
+          highlightText: "two early accepts."
         },
         { date: "May", text: "One paper was accepted to Nature - npj Health Systems." },
         {

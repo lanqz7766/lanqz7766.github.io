@@ -35,6 +35,7 @@ window.SITE_CONTENT = {
     "WWW 2026": "https://www2026.thewebconf.org/",
     "ACL 2026 Main Conference": "https://2026.aclweb.org/program/accepted_main_conference/",
     "ICLR 2026": "https://iclr.cc/Conferences/2026",
+    "ECCV 2026": "https://eccv.ecva.net/",
     "ICCV 2025": "https://iccv.thecvf.com/",
     "WACV 2025": "https://wacv2025.thecvf.com/",
     "WACV 2024": "https://wacv2024.thecvf.com/",
@@ -72,6 +73,7 @@ window.SITE_CONTENT = {
     {
       year: "2026",
       items: [
+        { date: "Jun", text: "One paper was accepted to ECCV 2026." },
         {
           date: "May",
           text: "Four papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions).",

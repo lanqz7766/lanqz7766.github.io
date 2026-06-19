@@ -74,7 +74,7 @@ window.SITE_CONTENT = {
       year: "2026",
       items: [
         { date: "Jun", text: "One paper was accepted to Neural Networks." },
-        { date: "Jun", text: "One paper was accepted to ECCV 2026." },
+        { date: "Jun", text: "VIGIL was accepted to ECCV 2026." },
         {
           date: "May",
           text: "Four papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions).",
@@ -124,6 +124,17 @@ window.SITE_CONTENT = {
       links: [
         { label: "Paper", url: "https://arxiv.org/pdf/2601.04745" },
         { label: "Code", url: "https://github.com/QuantaAlpha/KnowMeBench" }
+      ]
+    },
+    {
+      title: "Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs",
+      authors: "Xi Xiao*, Chen Liu*, Chih-Ting Liao, Yunbei Zhang, Qizhen Lan, Yuxiang Wei, Lin Zhao, Janet Wang, Jianyang Gu, Muchao Ye, Tianyang Wang, Hao Xu",
+      venue: "ECCV 2026",
+      contribution: "Co-author",
+      image: "assets/img/VIGIL-main.webp?v=20260619",
+      links: [
+        { label: "Project", url: "https://xixiaouab.github.io/VIGIL/" },
+        { label: "GitHub", url: "https://github.com/xixiaouab/VIGIL" }
       ]
     },
     {

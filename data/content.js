@@ -5,7 +5,7 @@ window.SITE_CONTENT = {
     affiliation: "UThealth-Houston",
     affiliationUrl: "https://www.uth.edu/",
     email: "Qizhen.Lan@uth.tmc.edu",
-    avatar: "assets/img/IMG_1381.png",
+    avatar: "assets/img/profile-photo.webp",
     links: [
       {
         label: "Scholar",

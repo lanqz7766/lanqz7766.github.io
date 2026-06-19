@@ -73,6 +73,7 @@ window.SITE_CONTENT = {
     {
       year: "2026",
       items: [
+        { date: "Jun", text: "One co-first-author paper was accepted to Neural Networks." },
         { date: "Jun", text: "One paper was accepted to ECCV 2026." },
         {
           date: "May",
@@ -185,6 +186,11 @@ window.SITE_CONTENT = {
           venue: "ICLR 2026 Poster",
           image: "assets/img/Uni-NTFM-main.png?v=20260528-13",
           links: [{ label: "Paper", url: "https://arxiv.org/pdf/2509.24222" }]
+        },
+        {
+          title: "Boosting Deep Detector Efficiency and Robustness through Detection Discriminant Reorganization and Compression",
+          authors: "Jung Im Choi*, Qizhen Lan*, Qing Tian",
+          venue: "Neural Networks, 2026 (* Co-first author)"
         },
         {
           title: "From Performance to Practice: Knowledge-Distilled Segmentator for On-Premises Clinical Workflows",

@@ -73,7 +73,7 @@ window.SITE_CONTENT = {
     {
       year: "2026",
       items: [
-        { date: "Jun", text: "One co-first-author paper was accepted to Neural Networks." },
+        { date: "Jun", text: "One paper was accepted to Neural Networks." },
         { date: "Jun", text: "One paper was accepted to ECCV 2026." },
         {
           date: "May",

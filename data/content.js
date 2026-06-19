@@ -132,7 +132,7 @@ window.SITE_CONTENT = {
       venue: "MICCAI 2026",
       contribution: "Corresponding author",
       note: "Top 9% provisionally accepted among 4,601 MICCAI 2026 submissions",
-      image: "assets/img/DCD-main.png",
+      image: "assets/img/DCD-main.png?v=20260618-crop",
       links: [
         { label: "Paper", url: "https://arxiv.org/pdf/2605.26382" },
         { label: "Code", url: "https://github.com/ClinicaAlpha/DCD-3D-MedSeg" }
@@ -165,7 +165,7 @@ window.SITE_CONTENT = {
       authors: "Qizhen Lan, Qing Tian",
       venue: "WACV 2024",
       contribution: "First author",
-      image: "assets/img/GKD.png",
+      image: "assets/img/GKD.png?v=20260618-crop",
       links: [
         {
           label: "Paper",

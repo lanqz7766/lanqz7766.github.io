@@ -296,8 +296,8 @@ h3 {
 
 .publication {
   display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 20px;
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -307,13 +307,13 @@ h3 {
 }
 
 .pub-image {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9.8;
-  object-fit: contain;
-  padding: 6px;
+  height: auto;
   border: 1px solid #d9dee4;
   border-radius: 2px;
   background: #ffffff;
+  box-shadow: 0 1px 2px rgba(31, 45, 61, 0.08);
 }
 
 .pub-title {
@@ -396,13 +396,13 @@ h3 {
 }
 
 .compact-image {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9.8;
-  object-fit: contain;
-  padding: 4px;
+  height: auto;
   border: 1px solid #d9dee4;
   border-radius: 2px;
   background: #ffffff;
+  box-shadow: 0 1px 2px rgba(31, 45, 61, 0.08);
 }
 
 .compact-title {

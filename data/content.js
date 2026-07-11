@@ -77,7 +77,7 @@ window.SITE_CONTENT = {
         { date: "Jun", text: "VIGIL was accepted to ECCV 2026." },
         {
           date: "May",
-          text: "Four papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions).",
+          text: "Three papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions).",
           highlightText: "two early accepts (top 9% among 4,601 submissions)."
         },
         { date: "May", text: "One paper was accepted to Nature - npj Health Systems." },

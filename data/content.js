@@ -77,8 +77,8 @@ window.SITE_CONTENT = {
         { date: "Jun", text: "VIGIL was accepted to ECCV 2026." },
         {
           date: "May",
-          text: "Three papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions).",
-          highlightText: "two early accepts (top 9% among 4,601 submissions)."
+          text: "Three papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions), with one Spotlight and one Oral presentation.",
+          highlightText: "two early accepts (top 9% among 4,601 submissions), with one Spotlight and one Oral presentation."
         },
         { date: "May", text: "One paper was accepted to Nature - npj Health Systems." },
         {
@@ -115,6 +115,27 @@ window.SITE_CONTENT = {
 
   selectedPublications: [
     {
+      title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
+      authors: "Mengchen Fan, Baocheng Geng, Xi Xiao, Tianyang Wang, Siyuan Mei, Pulin Che, Xiaoqian Jiang, Qizhen Lan",
+      venue: "MICCAI 2026",
+      contribution: "Corresponding author",
+      note: "Early Accept \u00b7 Spotlight Presentation",
+      image: "assets/img/DCD-main.png?v=20260618-crop",
+      links: [
+        { label: "Paper", url: "https://arxiv.org/pdf/2605.26382" },
+        { label: "Code", url: "https://github.com/ClinicaAlpha/DCD-3D-MedSeg" }
+      ]
+    },
+    {
+      title: "Time Matters: Rethinking Diffusion and Flow Models in One-Step Medical Image Translation",
+      authors: "Siyuan Mei, Yanteng Zhang, Yan Xia, Qizhen Lan, Yipeng Sun, Siming Bayer, Zirong Li, Chengze Ye, Daiqi Liu, Xiaoqian Jiang, Fuxin Fan, Yixing Huang, Andreas Maier",
+      venue: "MICCAI 2026",
+      contribution: "Co-author",
+      note: "Early Accept \u00b7 Oral Presentation",
+      image: "assets/img/Time-Matters-main.png",
+      links: [{ label: "Code", url: "https://github.com/siyuan-mei/JiR" }]
+    },
+    {
       title: "KnowMe-Bench: Benchmarking Person Understanding for Lifelong Digital Companions",
       authors: "Tingyu Wu, Zhisheng Chen, Ziyan Weng, Shuhe Wang, Chenglong Li, Shuo Zhang, Sen Hu, Silin Wu, Qizhen Lan, Huacan Wang, Ronghao Chen",
       venue: "ACL 2026 Main Conference",
@@ -135,18 +156,6 @@ window.SITE_CONTENT = {
       links: [
         { label: "Project", url: "https://xixiaouab.github.io/VIGIL/" },
         { label: "GitHub", url: "https://github.com/xixiaouab/VIGIL" }
-      ]
-    },
-    {
-      title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
-      authors: "Mengchen Fan, Baocheng Geng, Xi Xiao, Tianyang Wang, Siyuan Mei, Pulin Che, Xiaoqian Jiang, Qizhen Lan",
-      venue: "MICCAI 2026",
-      contribution: "Corresponding author",
-      note: "Top 9% provisionally accepted among 4,601 MICCAI 2026 submissions",
-      image: "assets/img/DCD-main.png?v=20260618-crop",
-      links: [
-        { label: "Paper", url: "https://arxiv.org/pdf/2605.26382" },
-        { label: "Code", url: "https://github.com/ClinicaAlpha/DCD-3D-MedSeg" }
       ]
     },
     {

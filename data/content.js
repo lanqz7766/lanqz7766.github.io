@@ -296,8 +296,16 @@ window.SITE_CONTENT = {
           url: "https://cvpr2026.thecvf.com/"
         },
         {
+          label: "AAAI Conference on Artificial Intelligence (AAAI) 2026",
+          url: "https://aaai.org/conference/aaai/aaai-26/"
+        },
+        {
           label: "AAAI Conference on Artificial Intelligence (AAAI) 2025",
           url: "https://aaai.org/conference/aaai/aaai-25/"
+        },
+        {
+          label: "IEEE International Symposium on Biomedical Imaging (ISBI) 2026",
+          url: "https://biomedicalimaging.org/2026/"
         },
         {
           label: "IEEE International Symposium on Biomedical Imaging (ISBI) 2025",

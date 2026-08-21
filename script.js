@@ -20,6 +20,7 @@
     linkedin: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><path d="M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>',
     cv: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h6"/>',
     mail: '<path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/>',
+    wechat: '<path d="M3 10.2C3 6.8 6.3 4 10.3 4s7.3 2.8 7.3 6.2-3.3 6.2-7.3 6.2c-.8 0-1.7-.1-2.4-.3L4.8 18l.8-3.1C4 13.8 3 12.1 3 10.2Z"/><path d="M12.2 15.1c0 2.7 2.6 4.9 5.8 4.9.6 0 1.2-.1 1.8-.2l2.4 1.2-.6-2.4c1.1-.9 1.8-2.1 1.8-3.5 0-2.7-2.4-4.8-5.5-4.9"/><path d="M7.8 8.8h.1M12.6 8.8h.1M16 14h.1M19.8 14h.1"/>',
     paper: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 12h8M8 16h8M8 20h5"/>',
     code: '<path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m14 5-4 14"/>',
     activity: '<path d="M22 12h-4l-3 8L9 4l-3 8H2"/>',
@@ -33,6 +34,7 @@
     if (key.includes("scholar")) return "scholar";
     if (key.includes("github")) return "github";
     if (key.includes("linkedin")) return "linkedin";
+    if (key.includes("wechat")) return "wechat";
     if (key === "cv" || key.includes("curriculum")) return "cv";
     if (key.includes("paper") || key.includes("pdf")) return "paper";
     if (key.includes("code")) return "code";
@@ -163,6 +165,110 @@
 
     $("footer-name").textContent = ownName;
     $("footer-year").textContent = new Date().getFullYear();
+    if ($("footer-updated") && content.siteMeta && content.siteMeta.lastUpdated) {
+      $("footer-updated").textContent = content.siteMeta.lastUpdated;
+    }
+  }
+
+  function renderWechat() {
+    const wrap = $("wechat-contact");
+    const config = content.profile.wechat;
+    if (!wrap || !config || !config.qr) {
+      return;
+    }
+
+    wrap.hidden = false;
+
+    const trigger = document.createElement("button");
+    trigger.type = "button";
+    trigger.className = "wechat-trigger icon-link";
+    trigger.setAttribute("aria-expanded", "false");
+    trigger.setAttribute("aria-controls", "wechat-qr-card");
+    trigger.append(createIcon("wechat"), document.createTextNode(config.label || "WeChat"));
+
+    const card = document.createElement("span");
+    card.id = "wechat-qr-card";
+    card.className = "wechat-qr-card";
+    card.setAttribute("aria-hidden", "true");
+
+    const top = document.createElement("span");
+    top.className = "wechat-card-top";
+    const title = document.createElement("strong");
+    title.textContent = config.displayName || "WeChat";
+    const closeButton = document.createElement("button");
+    closeButton.type = "button";
+    closeButton.className = "wechat-close";
+    closeButton.setAttribute("aria-label", "Close WeChat QR code");
+    closeButton.textContent = "×";
+    top.append(title, closeButton);
+
+    const imageLink = document.createElement("a");
+    imageLink.className = "wechat-image-link";
+    imageLink.href = config.qr;
+    imageLink.target = "_blank";
+    imageLink.rel = "noreferrer";
+    imageLink.setAttribute("aria-label", "Open full-size WeChat QR code");
+    const image = document.createElement("img");
+    image.src = config.qr;
+    image.alt = `WeChat QR code for ${config.displayName || ownName}`;
+    image.loading = "lazy";
+    imageLink.append(image);
+
+    const note = document.createElement("small");
+    note.textContent = config.note || "Scan to connect on WeChat";
+    card.append(top, imageLink, note);
+    wrap.replaceChildren(trigger, card);
+
+    let keyboardInput = false;
+    let suppressFocusOpen = false;
+
+    function setOpen(isOpen) {
+      wrap.classList.toggle("is-open", isOpen);
+      trigger.setAttribute("aria-expanded", String(isOpen));
+      card.setAttribute("aria-hidden", String(!isOpen));
+    }
+
+    document.addEventListener(
+      "pointerdown",
+      (event) => {
+        keyboardInput = false;
+        if (!wrap.contains(event.target)) {
+          setOpen(false);
+        }
+      },
+      true
+    );
+
+    document.addEventListener("keydown", (event) => {
+      keyboardInput = true;
+      if (event.key === "Escape" && wrap.classList.contains("is-open")) {
+        event.preventDefault();
+        setOpen(false);
+        suppressFocusOpen = true;
+        trigger.focus({ preventScroll: true });
+        suppressFocusOpen = false;
+      }
+    });
+
+    trigger.addEventListener("focus", () => {
+      if (keyboardInput && !suppressFocusOpen) {
+        setOpen(true);
+      }
+    });
+
+    trigger.addEventListener("click", (event) => {
+      if (event.detail === 0 && wrap.classList.contains("is-open")) {
+        return;
+      }
+      setOpen(!wrap.classList.contains("is-open"));
+    });
+
+    closeButton.addEventListener("click", () => {
+      setOpen(false);
+      suppressFocusOpen = true;
+      trigger.focus({ preventScroll: true });
+      suppressFocusOpen = false;
+    });
   }
 
   function bindActiveNavigation() {
@@ -211,40 +317,103 @@
   function renderNews() {
     const news = $("news-content");
     news.replaceChildren();
-    content.news.forEach((yearGroup) => {
-      const block = document.createElement("div");
-      block.className = "year-block";
+    const visibleLimit = 6;
+    const allItems = content.news.flatMap((yearGroup) =>
+      (yearGroup.items || []).map((item) => ({ ...item, year: yearGroup.year }))
+    );
 
-      const year = document.createElement("div");
-      year.className = "year-label";
-      year.textContent = yearGroup.year;
-
-      const list = document.createElement("ul");
-      list.className = "news-list";
-      yearGroup.items.forEach((item) => {
-        const li = document.createElement("li");
-        const date = document.createElement("span");
-        date.className = "date-tag";
-        date.textContent = `[${item.date}] `;
-        li.append(date);
-
-        if (item.highlightText && item.text.includes(item.highlightText)) {
-          const start = item.text.indexOf(item.highlightText);
-          appendLinkedText(li, item.text.slice(0, start));
-          const emphasis = document.createElement("span");
-          emphasis.className = "news-emphasis";
-          emphasis.textContent = item.highlightText;
-          li.append(emphasis);
-          appendLinkedText(li, item.text.slice(start + item.highlightText.length));
-        } else {
-          appendLinkedText(li, item.text);
+    function renderGroups(items, target, options = {}) {
+      const groups = [];
+      items.forEach((item) => {
+        let group = groups.find((candidate) => candidate.year === item.year);
+        if (!group) {
+          group = { year: item.year, items: [] };
+          groups.push(group);
         }
-        list.append(li);
+        group.items.push(item);
       });
 
-      block.append(year, list);
-      news.append(block);
+      groups.forEach((yearGroup, groupIndex) => {
+        const block = document.createElement("div");
+        block.className = "year-block";
+
+        const year = document.createElement("div");
+        year.className = "year-label";
+        year.textContent = yearGroup.year;
+
+        const list = document.createElement("ul");
+        list.className = "news-list";
+        yearGroup.items.forEach((item) => {
+          const li = document.createElement("li");
+          const date = document.createElement("span");
+          date.className = "date-tag";
+          date.textContent = `[${item.date}] `;
+          li.append(date);
+
+          if (item.highlightText && item.text.includes(item.highlightText)) {
+            const start = item.text.indexOf(item.highlightText);
+            appendLinkedText(li, item.text.slice(0, start));
+            const emphasis = document.createElement("span");
+            emphasis.className = "news-emphasis";
+            appendLinkedText(emphasis, item.highlightText);
+            li.append(emphasis);
+            appendLinkedText(li, item.text.slice(start + item.highlightText.length));
+          } else {
+            appendLinkedText(li, item.text);
+          }
+          list.append(li);
+        });
+
+        if (!(options.suppressFirstYear && groupIndex === 0)) {
+          block.append(year);
+        }
+        block.append(list);
+        target.append(block);
+      });
+    }
+
+    renderGroups(allItems.slice(0, visibleLimit), news);
+
+    const olderItems = allItems.slice(visibleLimit);
+    if (!olderItems.length) {
+      return;
+    }
+
+    const archive = document.createElement("div");
+    archive.className = "news-archive";
+    archive.id = "older-news";
+    archive.setAttribute("aria-hidden", "true");
+    archive.inert = true;
+    renderGroups(olderItems, archive, {
+      suppressFirstYear: olderItems[0].year === allItems[visibleLimit - 1].year
     });
+
+    const toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "news-toggle";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", archive.id);
+    toggle.innerHTML = '<span>Show older news</span><span class="news-toggle-arrow" aria-hidden="true">↓</span>';
+
+    function setArchiveOpen(isOpen) {
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      archive.setAttribute("aria-hidden", String(!isOpen));
+      archive.inert = !isOpen;
+      archive.classList.toggle("is-open", isOpen);
+      archive.style.maxHeight = isOpen ? `${archive.scrollHeight}px` : "0px";
+      toggle.querySelector("span").textContent = isOpen ? "Show fewer" : "Show older news";
+    }
+
+    toggle.addEventListener("click", () => {
+      setArchiveOpen(toggle.getAttribute("aria-expanded") !== "true");
+    });
+    window.addEventListener("resize", () => {
+      if (archive.classList.contains("is-open")) {
+        archive.style.maxHeight = `${archive.scrollHeight}px`;
+      }
+    });
+
+    news.append(archive, toggle);
   }
 
   function renderResearch() {
@@ -259,6 +428,17 @@
       appendLinkedText(body, item.text);
       const copy = document.createElement("div");
       copy.append(title, body);
+
+      if (item.papers && item.papers.length) {
+        const papers = document.createElement("div");
+        papers.className = "research-papers";
+        papers.setAttribute("aria-label", `Representative work in ${item.title}`);
+        item.papers.forEach((paper) => {
+          papers.append(createLink(paper, "research-paper-link", { icon: false }));
+        });
+        copy.append(papers);
+      }
+
       row.append(copy);
       target.append(row);
     });
@@ -379,6 +559,7 @@
       period.textContent = item.period;
 
       const body = document.createElement("div");
+      body.className = "entry-copy";
       const title = document.createElement("h3");
       title.textContent = item.title;
       const org = document.createElement("p");
@@ -387,9 +568,57 @@
       appendLinkedText(detail, [item.location, item.detail].filter(Boolean).join(" - "));
       body.append(title, org, detail);
 
-      entry.append(period, body);
+      if (item.summary) {
+        const summary = document.createElement("p");
+        summary.className = "entry-summary";
+        appendLinkedText(summary, item.summary);
+        body.append(summary);
+      }
+
+      const main = document.createElement("div");
+      main.className = "entry-main";
+      if (item.logo) {
+        const logo = document.createElement("img");
+        logo.className = "entry-logo";
+        logo.src = item.logo;
+        logo.alt = item.logoAlt || `${item.organization} logo`;
+        logo.loading = "lazy";
+        main.append(logo);
+      }
+      main.append(body);
+
+      entry.append(period, main);
       target.append(entry);
     });
+  }
+
+  function initVisitorAnalytics() {
+    const analytics = content.siteMeta && content.siteMeta.analytics;
+    const code = analytics && analytics.siteCode ? analytics.siteCode.trim() : "";
+    if (!code) {
+      return;
+    }
+
+    $("visitor-note").textContent = "Privacy-friendly visit count";
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://gc.zgo.at/count.js";
+    script.dataset.goatcounter = `https://${code}.goatcounter.com/count`;
+    document.body.append(script);
+
+    fetch(`https://${code}.goatcounter.com/counter/TOTAL.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Visitor count unavailable");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        $("visitor-count").textContent = data.count || "—";
+      })
+      .catch(() => {
+        $("visitor-note").textContent = "Visit tracking is active; public count is unavailable.";
+      });
   }
 
   function renderAwards() {
@@ -428,6 +657,7 @@
   }
 
   renderProfile();
+  renderWechat();
   renderAbout();
   renderNews();
   renderResearch();
@@ -437,5 +667,6 @@
   renderEntries(content.experience, "experience-content");
   renderAwards();
   renderService();
+  initVisitorAnalytics();
   bindActiveNavigation();
 })();

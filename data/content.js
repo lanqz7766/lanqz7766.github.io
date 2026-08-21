@@ -1,4 +1,12 @@
 window.SITE_CONTENT = {
+  siteMeta: {
+    lastUpdated: "August 21, 2026",
+    analytics: {
+      provider: "GoatCounter",
+      siteCode: ""
+    }
+  },
+
   profile: {
     name: "Qizhen Lan",
     title: "Postdoctoral Research Fellow",
@@ -6,6 +14,12 @@ window.SITE_CONTENT = {
     affiliationUrl: "https://www.uth.edu/",
     email: "Qizhen.Lan@uth.tmc.edu",
     avatar: "assets/img/profile-photo.webp",
+    wechat: {
+      label: "WeChat",
+      qr: "assets/img/wechat-qr-qizhen-lan.jpg",
+      displayName: "阿兰",
+      note: "Scan to connect on WeChat"
+    },
     links: [
       {
         label: "Scholar",
@@ -56,19 +70,41 @@ window.SITE_CONTENT = {
   researchInterests: [
     {
       title: "Medical AI",
-      text: "Clinical imaging, 3D segmentation, and deployable medical AI systems."
+      text: "Clinical imaging, 3D segmentation, and deployable medical AI systems.",
+      papers: [
+        { label: "MICCAI'26 DCD", url: "https://arxiv.org/pdf/2605.26382" },
+        { label: "MICCAI'26 Time Matters", url: "https://github.com/siyuan-mei/JiR" },
+        { label: "npj Health Systems'26 Clinical Workflows", url: "https://arxiv.org/pdf/2601.09191" }
+      ]
     },
     {
       title: "Efficient AI",
-      text: "Knowledge distillation, pruning, and compact models for real deployment."
+      text: "Knowledge distillation, pruning, and compact models for real deployment.",
+      papers: [
+        { label: "ICCV'25 ACAM-KD", url: "https://arxiv.org/pdf/2503.06307" },
+        { label: "WACV'24 GKD", url: "https://openaccess.thecvf.com/content/WACV2024/papers/Lan_Gradient-Guided_Knowledge_Distillation_for_Object_Detectors_WACV_2024_paper.pdf" },
+        { label: "WACV'25 CLoCKDistill", url: "https://arxiv.org/pdf/2502.10683" },
+        { label: "T-IV Adaptive KD", url: "https://par.nsf.gov/servlets/purl/10405166" }
+      ]
     },
     {
       title: "Computer Vision",
-      text: "Detection, tracking, robustness, and task-aware perception."
+      text: "Detection, tracking, robustness, and task-aware perception.",
+      papers: [
+        { label: "ECCV'26 VIGIL", url: "https://xixiaouab.github.io/VIGIL/" },
+        { label: "WACV'25 DDMR", url: "https://openaccess.thecvf.com/content/WACV2025/papers/Choi_Improving_Deep_Detector_Robustness_via_Detection-Related_Discriminant_Maximization_and_Reorganization_WACV_2025_paper.pdf" },
+        { label: "WACV'24 GKD", url: "https://github.com/lanqz7766/GKD" }
+      ]
     },
     {
       title: "Agentic & Trustworthy AI",
-      text: "Adaptive perception, decision-aware learning, safety, and reliability."
+      text: "Adaptive perception, decision-aware learning, safety, and reliability.",
+      papers: [
+        { label: "WWW'26 DAAO", url: "https://github.com/AutoAgents-ai/DAAO" },
+        { label: "EMNLP'26 ComfySearch", url: "https://arxiv.org/pdf/2601.04060" },
+        { label: "ACL'26 KnowMe-Bench", url: "https://arxiv.org/pdf/2601.04745" },
+        { label: "ECCV'26 VIGIL", url: "https://xixiaouab.github.io/VIGIL/" }
+      ]
     }
   ],
 
@@ -78,7 +114,8 @@ window.SITE_CONTENT = {
       items: [
         {
           date: "Aug",
-          text: "We are organizing the 1st Latent Visual Reasoning (LVR) Workshop at WACV 2027. See you in Orlando!"
+          text: "We are organizing the 1st Latent Visual Reasoning (LVR) Workshop at WACV 2027. See you in Orlando!",
+          highlightText: "1st Latent Visual Reasoning (LVR) Workshop at WACV 2027"
         },
         { date: "Aug", text: "Two papers were accepted to EMNLP 2026: one to the Main Conference and one to Findings." },
         { date: "Jun", text: "One paper was accepted to Neural Networks." },
@@ -279,7 +316,9 @@ window.SITE_CONTENT = {
       organization: "University of Alabama at Birmingham",
       period: "Completed May 2025",
       location: "Birmingham, Alabama, USA",
-      detail: "Advisor: Dr. Qing Tian"
+      detail: "Advisor: Dr. Qing Tian",
+      logo: "assets/img/uab-monogram.svg",
+      logoAlt: "University of Alabama at Birmingham mark"
     }
   ],
 
@@ -289,7 +328,10 @@ window.SITE_CONTENT = {
       organization: "UTHealth Houston",
       period: "May 2025 - Present",
       location: "Houston, Texas, USA",
-      detail: "McWilliams School of Biomedical Informatics; supervised by Dr. Xiaoqian Jiang."
+      detail: "McWilliams School of Biomedical Informatics; supervised by Dr. Xiaoqian Jiang.",
+      summary: "Research on deployable medical AI, efficient vision models, and agentic systems.",
+      logo: "assets/img/uthealth-houston-stacked.png",
+      logoAlt: "UTHealth Houston logo"
     }
   ],
 

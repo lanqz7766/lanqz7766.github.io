@@ -14,7 +14,7 @@ Edit that file to change:
 
 - name, title, affiliation, email, and links
 - about paragraphs
-- research interests
+- research interests and their representative-paper links
 - news
 - selected publications and other publications
 - education, experience, awards, and service
@@ -30,23 +30,38 @@ assets/img/
 The current profile image is configured as:
 
 ```text
-assets/img/IMG_1381.png
+assets/img/profile-photo.webp
 ```
 
 Publication thumbnails are also configured in `data/content.js`. Replace the image files or change the `image` path for each publication.
+
+The WeChat contact card and institutional marks also live in `assets/img/`.
+
+## Visitor Analytics
+
+The footer is ready for the open-source [GoatCounter](https://github.com/arp242/goatcounter) service. After creating a GoatCounter site, add only its site code in `data/content.js`:
+
+```js
+analytics: {
+  provider: "GoatCounter",
+  siteCode: "YOUR_SITE_CODE"
+}
+```
+
+The page loads no visitor-tracking script while the site code is empty.
 
 ## Local Preview
 
 Open `index.html` directly in a browser, or run a small local server:
 
 ```bash
-python3 -m http.server 8000
+python3 -m http.server 8027 --bind 127.0.0.1
 ```
 
 Then visit:
 
 ```text
-http://127.0.0.1:8000
+http://127.0.0.1:8027
 ```
 
 ## Publish Later

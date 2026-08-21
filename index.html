@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="assets/img/favicon.svg?v=20260620-2" type="image/svg+xml" />
     <link rel="alternate icon" href="assets/img/favicon.png?v=20260620" type="image/png" sizes="96x96" />
-    <link rel="stylesheet" href="styles.css?v=20260618-2" />
+    <link rel="stylesheet" href="styles.css?v=20260821-2" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -19,8 +19,8 @@
       <a id="site-name" class="site-name" href="#Home">Qizhen Lan</a>
       <nav class="nav-list" aria-label="Section navigation">
         <a href="#Home">Home</a>
-        <a href="#news">News</a>
         <a href="#research">Research</a>
+        <a href="#news">News</a>
         <a href="#publications">Publications</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
@@ -41,22 +41,24 @@
           </p>
           <div id="about-content" class="prose"></div>
           <p id="collaboration-note" class="collaboration-line"></p>
-          <p class="profile-links">
+          <div class="profile-links" aria-label="Profile and contact links">
             <span id="profile-links"></span>
             <span class="slash-separator">/</span>
             <a id="profile-email" class="email-link" href="#"></a>
-          </p>
+            <span class="slash-separator">/</span>
+            <span id="wechat-contact" class="wechat-contact" hidden></span>
+          </div>
         </div>
       </section>
-
-        <section id="news" class="section">
-          <h2>News</h2>
-          <div id="news-content" class="timeline"></div>
-        </section>
 
         <section id="research" class="section research-section">
           <h2>Research Interest</h2>
           <div id="research-content" class="research-list"></div>
+        </section>
+
+        <section id="news" class="section">
+          <h2>News</h2>
+          <div id="news-content" class="timeline"></div>
         </section>
 
         <section id="publications" class="section">
@@ -92,10 +94,25 @@
       </main>
 
     <footer class="site-footer">
-      <span id="footer-name">Qizhen Lan</span> <span id="footer-year"></span>. Inspired by clean academic homepage templates.
+      <div class="footer-widgets">
+        <section id="visitor-widget" class="footer-widget visitor-widget" aria-labelledby="visitor-widget-title">
+          <div class="footer-widget-heading">
+            <h2 id="visitor-widget-title">Page visits</h2>
+            <span class="footer-widget-kicker">GoatCounter</span>
+          </div>
+          <strong id="visitor-count" class="footer-stat">—</strong>
+          <p id="visitor-note" class="footer-widget-note">Open-source analytics ready for a site code.</p>
+        </section>
+      </div>
+
+      <p class="footer-meta">
+        <span id="footer-name">Qizhen Lan</span> <span id="footer-year"></span>.
+        Last updated <span id="footer-updated">August 2026</span>.
+        Inspired by clean academic homepage templates.
+      </p>
     </footer>
 
-    <script src="data/content.js?v=20260618-2"></script>
-    <script src="script.js?v=20260618-2"></script>
+    <script src="data/content.js?v=20260821-2"></script>
+    <script src="script.js?v=20260821-2"></script>
   </body>
 </html>

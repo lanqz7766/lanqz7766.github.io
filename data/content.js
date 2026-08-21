@@ -212,13 +212,12 @@ window.SITE_CONTENT = {
           title: "ComfySearch: Autonomous Exploration and Reasoning for ComfyUI Workflows",
           authors: "Jinwei Su, Qizhen Lan, ZEYU WANG, Yinghui Xia, Hairu Wen, Yiqun Duan, Xi Xiao, TIANYU SHI, Yang Jingsong, Lewei He",
           venue: "EMNLP 2026 Findings (Accepted)",
-          links: [{ label: "Paper", url: "https://openreview.net/forum?id=hUJCdIbkQm" }]
+          links: [{ label: "Paper", url: "https://arxiv.org/pdf/2601.04060" }]
         },
         {
           title: "KnowMeBenchV2: Evidence-Grounded Person-Centric Long-Video Understanding",
           authors: "Tingyu Wu, CaoGuangyu, Qizhen Lan, Zhisheng Chen, Ziyan Weng, Bingkun Zhu, Miao Su, Chenglong Li, Zhengwei Xie, Huacan Wang, Sen Hu, Haocun Ye, NAN AN, Zaoqu Liu, Ronghao Chen",
-          venue: "EMNLP 2026 Main Conference (Accepted)",
-          links: [{ label: "Paper", url: "https://openreview.net/forum?id=ZJo74s9AbP" }]
+          venue: "EMNLP 2026 Main Conference (Accepted)"
         }
       ]
     },

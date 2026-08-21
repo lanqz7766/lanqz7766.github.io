@@ -36,6 +36,9 @@ window.SITE_CONTENT = {
     "ACL 2026 Main Conference": "https://2026.aclweb.org/program/accepted_main_conference/",
     "ICLR 2026": "https://iclr.cc/Conferences/2026",
     "ECCV 2026": "https://eccv.ecva.net/",
+    "EMNLP 2026": "https://2026.emnlp.org/",
+    "WACV 2027": "https://wacv.thecvf.com/",
+    "1st Latent Visual Reasoning (LVR) Workshop": "https://chenliu-1996.github.io/LVR-WACV2027/",
     "ICCV 2025": "https://iccv.thecvf.com/",
     "WACV 2025": "https://wacv2025.thecvf.com/",
     "WACV 2024": "https://wacv2024.thecvf.com/",
@@ -73,6 +76,11 @@ window.SITE_CONTENT = {
     {
       year: "2026",
       items: [
+        {
+          date: "Aug",
+          text: "We are organizing the 1st Latent Visual Reasoning (LVR) Workshop at WACV 2027. See you in Orlando!"
+        },
+        { date: "Aug", text: "Two papers were accepted to EMNLP 2026: one to the Main Conference and one to Findings." },
         { date: "Jun", text: "One paper was accepted to Neural Networks." },
         { date: "Jun", text: "VIGIL was accepted to ECCV 2026." },
         {
@@ -198,6 +206,23 @@ window.SITE_CONTENT = {
 
   otherPublications: [
     {
+      year: "2027",
+      items: [
+        {
+          title: "ComfySearch: Autonomous Exploration and Reasoning for ComfyUI Workflows",
+          authors: "Jinwei Su, Qizhen Lan, ZEYU WANG, Yinghui Xia, Hairu Wen, Yiqun Duan, Xi Xiao, TIANYU SHI, Yang Jingsong, Lewei He",
+          venue: "EMNLP 2026 Findings (Accepted)",
+          links: [{ label: "Paper", url: "https://openreview.net/forum?id=hUJCdIbkQm" }]
+        },
+        {
+          title: "KnowMeBenchV2: Evidence-Grounded Person-Centric Long-Video Understanding",
+          authors: "Tingyu Wu, CaoGuangyu, Qizhen Lan, Zhisheng Chen, Ziyan Weng, Bingkun Zhu, Miao Su, Chenglong Li, Zhengwei Xie, Huacan Wang, Sen Hu, Haocun Ye, NAN AN, Zaoqu Liu, Ronghao Chen",
+          venue: "EMNLP 2026 Main Conference (Accepted)",
+          links: [{ label: "Paper", url: "https://openreview.net/forum?id=ZJo74s9AbP" }]
+        }
+      ]
+    },
+    {
       year: "2026",
       items: [
         {
@@ -276,6 +301,15 @@ window.SITE_CONTENT = {
   ],
 
   serviceGroups: [
+    {
+      title: "Workshop Organization",
+      items: [
+        {
+          label: "1st Latent Visual Reasoning (LVR) Workshop at WACV 2027",
+          url: "https://chenliu-1996.github.io/LVR-WACV2027/"
+        }
+      ]
+    },
     {
       title: "Conference Reviewers",
       items: [

@@ -157,9 +157,9 @@ window.SITE_CONTENT = {
   selectedPublications: [
     {
       title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
-      authors: "Mengchen Fan, Baocheng Geng, Xi Xiao, Tianyang Wang, Siyuan Mei, Pulin Che, Xiaoqian Jiang, Qizhen Lan",
+      authors: "Mengchen Fan, Baocheng Geng, Xi Xiao, Tianyang Wang, Siyuan Mei, Pulin Che, Xiaoqian Jiang†, Qizhen Lan†",
       venue: "MICCAI 2026",
-      contribution: "Corresponding author",
+      contribution: "† Corresponding authors",
       note: "Early Accept \u00b7 Spotlight Presentation",
       image: "assets/img/DCD-main.png?v=20260618-crop",
       links: [
@@ -178,9 +178,9 @@ window.SITE_CONTENT = {
     },
     {
       title: "KnowMe-Bench: Benchmarking Person Understanding for Lifelong Digital Companions",
-      authors: "Tingyu Wu, Zhisheng Chen, Ziyan Weng, Shuhe Wang, Chenglong Li, Shuo Zhang, Sen Hu, Silin Wu, Qizhen Lan, Huacan Wang, Ronghao Chen",
+      authors: "Tingyu Wu, Zhisheng Chen, Ziyan Weng, Shuhe Wang, Chenglong Li, Shuo Zhang, Sen Hu, Silin Wu, Qizhen Lan†, Huacan Wang, Ronghao Chen",
       venue: "ACL 2026 Main Conference",
-      contribution: "Corresponding author",
+      contribution: "† Corresponding author",
       note: "Oral Presentation",
       image: "assets/img/KnowMeBench-main.png",
       links: [

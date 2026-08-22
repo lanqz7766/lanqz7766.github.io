@@ -712,7 +712,8 @@ h3 {
 }
 
 .visitor-map-widget {
-  max-width: 520px;
+  width: 100%;
+  max-width: 280px;
 }
 
 .footer-widget {
@@ -746,7 +747,7 @@ h3 {
 }
 
 .visitor-map-embed {
-  min-height: 250px;
+  min-height: 150px;
   overflow: hidden;
   border-radius: 4px;
   background: #edf3f7;
@@ -846,11 +847,11 @@ h3 {
   }
 
   .visitor-map-widget {
-    max-width: none;
+    max-width: 280px;
   }
 
   .visitor-map-embed {
-    min-height: 180px;
+    min-height: 150px;
   }
 
   .wechat-qr-card {

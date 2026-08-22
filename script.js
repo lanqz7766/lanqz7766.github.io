@@ -592,35 +592,6 @@
     });
   }
 
-  function initVisitorAnalytics() {
-    const analytics = content.siteMeta && content.siteMeta.analytics;
-    const code = analytics && analytics.siteCode ? analytics.siteCode.trim() : "";
-    if (!code) {
-      return;
-    }
-
-    $("visitor-note").textContent = "Privacy-friendly visit count";
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://gc.zgo.at/count.js";
-    script.dataset.goatcounter = `https://${code}.goatcounter.com/count`;
-    document.body.append(script);
-
-    fetch(`https://${code}.goatcounter.com/counter/TOTAL.json`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Visitor count unavailable");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        $("visitor-count").textContent = data.count || "—";
-      })
-      .catch(() => {
-        $("visitor-note").textContent = "Visit tracking is active; public count is unavailable.";
-      });
-  }
-
   function renderAwards() {
     const target = $("awards-content");
     target.replaceChildren();
@@ -667,6 +638,5 @@
   renderEntries(content.experience, "experience-content");
   renderAwards();
   renderService();
-  initVisitorAnalytics();
   bindActiveNavigation();
 })();

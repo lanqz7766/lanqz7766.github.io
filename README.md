@@ -37,18 +37,11 @@ Publication thumbnails are also configured in `data/content.js`. Replace the ima
 
 The WeChat contact card and institutional marks also live in `assets/img/`.
 
-## Visitor Analytics
+## Visitor Map
 
-The footer is ready for the open-source [GoatCounter](https://github.com/arp242/goatcounter) service. After creating a GoatCounter site, add only its site code in `data/content.js`:
+The footer embeds a site-specific [MapMyVisitors](https://mapmyvisitors.com/) world map from `index.html`. The JavaScript widget is the primary integration; a plain-image fallback is included for browsers with JavaScript disabled.
 
-```js
-analytics: {
-  provider: "GoatCounter",
-  siteCode: "YOUR_SITE_CODE"
-}
-```
-
-The page loads no visitor-tracking script while the site code is empty.
+MapMyVisitors is a hosted third-party service that uses IP-derived approximate geolocation. If the map project is replaced, update both the JavaScript `d` value and the fallback image/link together.
 
 ## Local Preview
 

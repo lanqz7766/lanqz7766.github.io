@@ -1,10 +1,6 @@
 window.SITE_CONTENT = {
   siteMeta: {
-    lastUpdated: "August 21, 2026",
-    analytics: {
-      provider: "GoatCounter",
-      siteCode: ""
-    }
+    lastUpdated: "August 21, 2026"
   },
 
   profile: {

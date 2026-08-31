@@ -243,8 +243,8 @@ window.SITE_CONTENT = {
       items: [
         {
           title: "ComfySearch: Autonomous Exploration and Reasoning for ComfyUI Workflows",
-          authors: "Jinwei Su, Qizhen Lan, ZEYU WANG, Yinghui Xia, Hairu Wen, Yiqun Duan, Xi Xiao, TIANYU SHI, Yang Jingsong, Lewei He",
-          venue: "EMNLP 2026 Findings (Accepted)",
+          authors: "Jinwei Su*, Qizhen Lan*, ZEYU WANG, Yinghui Xia, Hairu Wen, Yiqun Duan, Xi Xiao, TIANYU SHI, Yang Jingsong, Lewei He",
+          venue: "EMNLP 2026 Findings (Accepted; * Co-first author)",
           links: [{ label: "Paper", url: "https://arxiv.org/pdf/2601.04060" }]
         },
         {

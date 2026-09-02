@@ -69,6 +69,7 @@ window.SITE_CONTENT = {
       text: "Clinical imaging, 3D segmentation, and deployable medical AI systems.",
       papers: [
         { label: "MICCAI'26 DCD", url: "https://arxiv.org/pdf/2605.26382" },
+        { label: "MICCAI'26 DPRD", url: "https://github.com/ClinicaAlpha/DPRD-3D-MedSeg" },
         { label: "MICCAI'26 Time Matters", url: "https://github.com/siyuan-mei/JiR" },
         { label: "npj Health Systems'26 Clinical Workflows", url: "https://arxiv.org/pdf/2601.09191" }
       ]
@@ -109,6 +110,11 @@ window.SITE_CONTENT = {
       year: "2026",
       items: [
         {
+          date: "Sep",
+          text: "Time Matters was nominated and shortlisted for the MICCAI 2026 Best Paper and Young Scientist Award.",
+          highlightText: "nominated and shortlisted for the MICCAI 2026 Best Paper and Young Scientist Award."
+        },
+        {
           date: "Aug",
           text: "We are organizing the 1st Latent Visual Reasoning (LVR) Workshop at WACV 2027. See you in Orlando!",
           highlightText: "1st Latent Visual Reasoning (LVR) Workshop at WACV 2027"
@@ -118,7 +124,7 @@ window.SITE_CONTENT = {
         { date: "Jun", text: "VIGIL was accepted to ECCV 2026." },
         {
           date: "May",
-          text: "Three papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions), with one Spotlight and one Oral presentation.",
+          text: "Three papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions), with one Spotlight and one Oral presentation. I am the last and corresponding author on the DCD and DPRD distillation papers.",
           highlightText: "two early accepts (top 9% among 4,601 submissions), with one Spotlight and one Oral presentation."
         },
         { date: "May", text: "One paper was accepted to Nature - npj Health Systems." },
@@ -159,7 +165,7 @@ window.SITE_CONTENT = {
       title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
       authors: "Mengchen Fan, Baocheng Geng, Xi Xiao, Tianyang Wang, Siyuan Mei, Pulin Che, Xiaoqian Jiang†, Qizhen Lan†",
       venue: "MICCAI 2026",
-      contribution: "† Corresponding authors",
+      contribution: "† Corresponding authors · Qizhen Lan is last author",
       note: "Early Accept \u00b7 Spotlight Presentation",
       image: "assets/img/DCD-main.png?v=20260618-crop",
       links: [
@@ -168,11 +174,19 @@ window.SITE_CONTENT = {
       ]
     },
     {
+      title: "Displacement Preserving Relational Distillation for Robust Medical Segmentation",
+      authors: "Zhicheng Ding*, Xinyu Chu*, Jung Im Choi, Qing Tian†, Tianyu Shi, Xiaoqian Jiang, Lijing Zhu, Qizhen Lan†",
+      venue: "MICCAI 2026",
+      contribution: "* Co-first authors · † Corresponding authors · Qizhen Lan is last author",
+      image: "assets/img/DPRD-main.webp",
+      links: [{ label: "Code", url: "https://github.com/ClinicaAlpha/DPRD-3D-MedSeg" }]
+    },
+    {
       title: "Time Matters: Rethinking Diffusion and Flow Models in One-Step Medical Image Translation",
       authors: "Siyuan Mei, Yanteng Zhang, Yan Xia, Qizhen Lan, Yipeng Sun, Siming Bayer, Zirong Li, Chengze Ye, Daiqi Liu, Xiaoqian Jiang, Fuxin Fan, Yixing Huang, Andreas Maier",
       venue: "MICCAI 2026",
       contribution: "Co-author",
-      note: "Early Accept \u00b7 Oral Presentation",
+      note: "Nominated & Shortlisted: Best Paper and Young Scientist Award · Early Accept · Oral Presentation",
       image: "assets/img/Time-Matters-main.png",
       links: [{ label: "Code", url: "https://github.com/siyuan-mei/JiR" }]
     },

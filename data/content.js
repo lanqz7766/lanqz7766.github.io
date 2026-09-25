@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   siteMeta: {
-    lastUpdated: "September 24, 2026"
+    lastUpdated: "September 25, 2026"
   },
 
   profile: {
@@ -127,7 +127,11 @@ window.SITE_CONTENT = {
           text: "We are organizing the 1st Latent Visual Reasoning (LVR) Workshop at WACV 2027. See you in Orlando!",
           highlightText: "1st Latent Visual Reasoning (LVR) Workshop at WACV 2027"
         },
-        { date: "Aug", text: "Two papers were accepted to EMNLP 2026: one to the Main Conference and one to Findings." },
+        {
+          date: "Aug",
+          text: "Two papers were accepted to EMNLP 2026: KnowMeBenchV2 to the Main Conference (Oral) and ComfySearch to Findings.",
+          highlightText: "Main Conference (Oral)"
+        },
         { date: "Jun", text: "One paper was accepted to Neural Networks." },
         { date: "Jun", text: "VIGIL was accepted to ECCV 2026." },
         {
@@ -174,7 +178,6 @@ window.SITE_CONTENT = {
       authors: "Qizhen Lan, Mengchen Fan, Hang Zhang, Jingwei Duan, Moule Lin, Jialin Chen, Baocheng Geng, Xiaoqian Jiang",
       venue: "NeurIPS 2026 Evaluations & Datasets Track",
       contribution: "First author",
-      note: "Accepted",
       image: "assets/img/BrainTRACE-main.png"
     },
     {
@@ -182,7 +185,6 @@ window.SITE_CONTENT = {
       authors: "Qizhen Lan, Yu-Chun Hsu, Yuxiang Wei, Lijing Zhu, Zenan Sun, Liang He, Lishan Yu, Xiaoqian Jiang",
       venue: "NeurIPS 2026 Evaluations & Datasets Track",
       contribution: "First author",
-      note: "Accepted",
       image: "assets/img/OpenBrain-main.png"
     },
     {
@@ -282,7 +284,7 @@ window.SITE_CONTENT = {
         {
           title: "ValuSpec: Plug-and-Play Candidate Valuation before Target Verification for Tree-Based Speculative Decoding",
           authors: "Liang He, SiYuan Ma, Qishi Zhan, Yongqi Fan, Mingyu Cao, Qizhen Lan, Zhaolu Kang, Xilu Wang",
-          venue: "NeurIPS 2026 (Accepted; Poster)"
+          venue: "NeurIPS 2026 (Poster)"
         }
       ]
     },
@@ -298,7 +300,7 @@ window.SITE_CONTENT = {
         {
           title: "KnowMeBenchV2: Evidence-Grounded Person-Centric Long-Video Understanding",
           authors: "Tingyu Wu, CaoGuangyu, Qizhen Lan, Zhisheng Chen, Ziyan Weng, Bingkun Zhu, Miao Su, Chenglong Li, Zhengwei Xie, Huacan Wang, Sen Hu, Haocun Ye, NAN AN, Zaoqu Liu, Ronghao Chen",
-          venue: "EMNLP 2026 Main Conference (Accepted)"
+          venue: "EMNLP 2026 Main Conference (Oral)"
         }
       ]
     },

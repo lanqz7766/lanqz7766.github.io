@@ -385,8 +385,9 @@ h3 {
 }
 
 .news-emphasis {
-  color: #aa1f1f;
-  font-weight: 700;
+  color: #a85f57;
+  font-size: 0.96em;
+  font-weight: 400;
 }
 
 .news-emphasis a {

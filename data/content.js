@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   siteMeta: {
-    lastUpdated: "August 21, 2026"
+    lastUpdated: "September 24, 2026"
   },
 
   profile: {
@@ -40,6 +40,7 @@ window.SITE_CONTENT = {
     "npj Health Systems": "https://www.nature.com/npjhealthsyst/",
     "npj Digital Medicine": "https://www.nature.com/npjdigitalmed/",
     "NeurIPS 2026": "https://nips.cc/",
+    "NeurIPS 2026 Evaluations & Datasets Track": "https://neurips.cc/Conferences/2026/CallForEvaluationsDatasets",
     "ACM Multimedia 2026": "https://2026.acmmm.org/",
     "MICCAI 2026": "https://conferences.miccai.org/2026/en/",
     "WWW 2026": "https://www2026.thewebconf.org/",
@@ -52,7 +53,9 @@ window.SITE_CONTENT = {
     "ICCV 2025": "https://iccv.thecvf.com/",
     "WACV 2025": "https://wacv2025.thecvf.com/",
     "WACV 2024": "https://wacv2024.thecvf.com/",
-    "CVPR 2026": "https://cvpr2026.thecvf.com/"
+    "CVPR 2026": "https://cvpr2026.thecvf.com/",
+    "ACL Rolling Review (ARR)": "https://aclrollingreview.org/",
+    "WACV 2026": "https://wacv.thecvf.com/Conferences/2026"
   },
 
   about: [
@@ -111,6 +114,11 @@ window.SITE_CONTENT = {
       items: [
         {
           date: "Sep",
+          text: "Three papers were accepted to NeurIPS 2026: BrainTRACE and OpenBrain in the Evaluations & Datasets Track, and ValuSpec as a Poster.",
+          highlightText: "Three papers were accepted to NeurIPS 2026"
+        },
+        {
+          date: "Sep",
           text: "Time Matters was nominated and shortlisted for the MICCAI 2026 Best Paper and Young Scientist Award.",
           highlightText: "nominated and shortlisted for the MICCAI 2026 Best Paper and Young Scientist Award."
         },
@@ -161,6 +169,22 @@ window.SITE_CONTENT = {
   ],
 
   selectedPublications: [
+    {
+      title: "BrainTRACE: Tracing Longitudinal, Multimodal, and Volumetric Evidence in Brain MRI Clinical Reasoning",
+      authors: "Qizhen Lan, Mengchen Fan, Hang Zhang, Jingwei Duan, Moule Lin, Jialin Chen, Baocheng Geng, Xiaoqian Jiang",
+      venue: "NeurIPS 2026 Evaluations & Datasets Track",
+      contribution: "First author",
+      note: "Accepted",
+      image: "assets/img/BrainTRACE-main.png"
+    },
+    {
+      title: "OpenBrain: An Auditable Generated-Label Release for Whole-Brain MRI Parcellation",
+      authors: "Qizhen Lan, Yu-Chun Hsu, Yuxiang Wei, Lijing Zhu, Zenan Sun, Liang He, Lishan Yu, Xiaoqian Jiang",
+      venue: "NeurIPS 2026 Evaluations & Datasets Track",
+      contribution: "First author",
+      note: "Accepted",
+      image: "assets/img/OpenBrain-main.png"
+    },
     {
       title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
       authors: "Mengchen Fan, Baocheng Geng, Xi Xiao, Tianyang Wang, Siyuan Mei, Pulin Che, Xiaoqian Jiang†, Qizhen Lan†",
@@ -252,6 +276,16 @@ window.SITE_CONTENT = {
   ],
 
   otherPublications: [
+    {
+      year: "2026",
+      items: [
+        {
+          title: "ValuSpec: Plug-and-Play Candidate Valuation before Target Verification for Tree-Based Speculative Decoding",
+          authors: "Liang He, SiYuan Ma, Qishi Zhan, Yongqi Fan, Mingyu Cao, Qizhen Lan, Zhaolu Kang, Xilu Wang",
+          venue: "NeurIPS 2026 (Accepted; Poster)"
+        }
+      ]
+    },
     {
       year: "2027",
       items: [
@@ -373,6 +407,10 @@ window.SITE_CONTENT = {
           url: "https://2026.acmmm.org/"
         },
         {
+          label: "ACL Rolling Review (ARR) 2026",
+          url: "https://aclrollingreview.org/"
+        },
+        {
           label: "International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2026",
           url: "https://conferences.miccai.org/2026/en/default.asp"
         },
@@ -389,8 +427,8 @@ window.SITE_CONTENT = {
           url: "https://biomedicalimaging.org/"
         },
         {
-          label: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024, 2025",
-          url: "https://wacv2025.thecvf.com/"
+          label: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024–2026",
+          url: "https://wacv.thecvf.com/Conferences/2026"
         }
       ]
     },

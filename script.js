@@ -351,17 +351,19 @@
           date.textContent = `[${item.date}] `;
           li.append(date);
 
-          if (item.highlightText && item.text.includes(item.highlightText)) {
-            const start = item.text.indexOf(item.highlightText);
-            appendLinkedText(li, item.text.slice(0, start));
+          const highlights = (item.highlights || [])
+            .map(phrase => ({ phrase, start: item.text.indexOf(phrase) }))
+            .sort((a, b) => a.start - b.start);
+          let cursor = 0;
+          highlights.forEach(({ phrase, start }) => {
+            appendLinkedText(li, item.text.slice(cursor, start));
             const emphasis = document.createElement("span");
             emphasis.className = "news-emphasis";
-            appendLinkedText(emphasis, item.highlightText);
+            appendLinkedText(emphasis, phrase);
             li.append(emphasis);
-            appendLinkedText(li, item.text.slice(start + item.highlightText.length));
-          } else {
-            appendLinkedText(li, item.text);
-          }
+            cursor = start + phrase.length;
+          });
+          appendLinkedText(li, item.text.slice(cursor));
           list.append(li);
         });
 

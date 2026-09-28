@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   siteMeta: {
-    lastUpdated: "September 27, 2026"
+    lastUpdated: "September 28, 2026"
   },
 
   profile: {
@@ -117,36 +117,35 @@ window.SITE_CONTENT = {
       items: [
         {
           date: "Sep",
-          text: "Three papers were accepted to NeurIPS 2026: BrainTRACE and OpenBrain in the Evaluations & Datasets Track, and ValuSpec as a Poster.",
-          highlightText: "Three papers were accepted to NeurIPS 2026"
+          text: "Three papers were accepted to NeurIPS 2026: BrainTRACE and OpenBrain in the Evaluations & Datasets Track, and ValuSpec as a Poster."
         },
         {
           date: "Sep",
           text: "Time Matters was nominated and shortlisted for the MICCAI 2026 Best Paper and Young Scientist Award.",
-          highlightText: "nominated and shortlisted for the MICCAI 2026 Best Paper and Young Scientist Award."
+          highlights: ["nominated and shortlisted", "Best Paper and Young Scientist Award"]
         },
         {
           date: "Aug",
           text: "We are organizing the 1st Latent Visual Reasoning (LVR) Workshop at WACV 2027. See you in Orlando!",
-          highlightText: "1st Latent Visual Reasoning (LVR) Workshop at WACV 2027"
+          highlights: ["1st Latent Visual Reasoning (LVR) Workshop"]
         },
         {
           date: "Aug",
           text: "Two papers were accepted to EMNLP 2026: KnowMeBenchV2 to the Main Conference (Oral) and ComfySearch to Findings.",
-          highlightText: "Main Conference (Oral)"
+          highlights: ["(Oral)"]
         },
         { date: "Jun", text: "One paper was accepted to Neural Networks." },
         { date: "Jun", text: "VIGIL was accepted to ECCV 2026." },
         {
           date: "May",
           text: "Three papers were accepted to MICCAI 2026, including two early accepts (top 9% among 4,601 submissions), with one Spotlight and one Oral presentation. I am the last and corresponding author on the DCD and DPRD distillation papers.",
-          highlightText: "two early accepts (top 9% among 4,601 submissions), with one Spotlight and one Oral presentation."
+          highlights: ["Spotlight", "Oral presentation"]
         },
         { date: "May", text: "One paper was accepted to Nature - npj Health Systems." },
         {
           date: "Apr",
           text: "KnowMe-Bench was accepted to ACL 2026 Main Conference as an Oral Presentation.",
-          highlightText: "Oral Presentation."
+          highlights: ["Oral Presentation"]
         },
         { date: "Jan", text: "Uni-NTFM was accepted to ICLR 2026 as a Poster." },
         { date: "Jan", text: "One paper has been accepted to ICASSP 2026." },
@@ -168,7 +167,7 @@ window.SITE_CONTENT = {
         {
           date: "Oct",
           text: "One paper on detector robustness was accepted to WACV 2025 as an Oral Presentation.",
-          highlightText: "Oral Presentation."
+          highlights: ["Oral Presentation"]
         },
         { date: "Sep", text: "One paper on medical image segmentation was accepted to ICTAI 2024." }
       ]

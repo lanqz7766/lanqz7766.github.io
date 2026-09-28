@@ -405,7 +405,8 @@ h3 {
   opacity: 1;
 }
 
-.news-toggle {
+.news-toggle,
+.publications-toggle {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -420,12 +421,14 @@ h3 {
   cursor: pointer;
 }
 
-.news-toggle:hover {
+.news-toggle:hover,
+.publications-toggle:hover {
   border-bottom-color: currentColor;
   color: var(--link-hover);
 }
 
-.news-toggle:focus-visible {
+.news-toggle:focus-visible,
+.publications-toggle:focus-visible {
   outline: 2px solid var(--link);
   outline-offset: 4px;
 }
@@ -435,8 +438,23 @@ h3 {
   transition: transform 220ms ease;
 }
 
-.news-toggle[aria-expanded="true"] .news-toggle-arrow {
+.news-toggle[aria-expanded="true"] .news-toggle-arrow,
+.publications-archive[open] > summary .news-toggle-arrow {
   transform: rotate(180deg);
+}
+
+.publications-toggle {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.publications-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.publication[id],
+.compact-list > li[id] {
+  scroll-margin-top: 88px;
 }
 
 .date-tag {

@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   siteMeta: {
-    lastUpdated: "September 25, 2026"
+    lastUpdated: "September 27, 2026"
   },
 
   profile: {
@@ -69,8 +69,10 @@ window.SITE_CONTENT = {
   researchInterests: [
     {
       title: "Medical AI",
-      text: "Clinical imaging, 3D segmentation, and deployable medical AI systems.",
+      text: "Neuroimaging benchmarks, clinical reasoning, 3D segmentation, and deployable medical AI.",
       papers: [
+        { label: "NeurIPS'26 BrainTRACE", url: "#braintrace" },
+        { label: "NeurIPS'26 OpenBrain", url: "#openbrain" },
         { label: "MICCAI'26 DCD", url: "https://arxiv.org/pdf/2605.26382" },
         { label: "MICCAI'26 DPRD", url: "https://github.com/ClinicaAlpha/DPRD-3D-MedSeg" },
         { label: "MICCAI'26 Time Matters", url: "https://github.com/siyuan-mei/JiR" },
@@ -79,8 +81,9 @@ window.SITE_CONTENT = {
     },
     {
       title: "Efficient AI",
-      text: "Knowledge distillation, pruning, and compact models for real deployment.",
+      text: "Knowledge distillation, model compression, and efficient LLM inference.",
       papers: [
+        { label: "NeurIPS'26 ValuSpec", url: "#valuspec" },
         { label: "ICCV'25 ACAM-KD", url: "https://arxiv.org/pdf/2503.06307" },
         { label: "WACV'24 GKD", url: "https://openaccess.thecvf.com/content/WACV2024/papers/Lan_Gradient-Guided_Knowledge_Distillation_for_Object_Detectors_WACV_2024_paper.pdf" },
         { label: "WACV'25 CLoCKDistill", url: "https://arxiv.org/pdf/2502.10683" },
@@ -174,6 +177,7 @@ window.SITE_CONTENT = {
 
   selectedPublications: [
     {
+      id: "braintrace",
       title: "BrainTRACE: Tracing Longitudinal, Multimodal, and Volumetric Evidence in Brain MRI Clinical Reasoning",
       authors: "Qizhen Lan, Mengchen Fan, Hang Zhang, Jingwei Duan, Moule Lin, Jialin Chen, Baocheng Geng, Xiaoqian Jiang",
       venue: "NeurIPS 2026 Evaluations & Datasets Track",
@@ -181,6 +185,7 @@ window.SITE_CONTENT = {
       image: "assets/img/BrainTRACE-main.png"
     },
     {
+      id: "openbrain",
       title: "OpenBrain: An Auditable Generated-Label Release for Whole-Brain MRI Parcellation",
       authors: "Qizhen Lan, Yu-Chun Hsu, Yuxiang Wei, Lijing Zhu, Zenan Sun, Liang He, Lishan Yu, Xiaoqian Jiang",
       venue: "NeurIPS 2026 Evaluations & Datasets Track",
@@ -218,7 +223,7 @@ window.SITE_CONTENT = {
     },
     {
       title: "KnowMe-Bench: Benchmarking Person Understanding for Lifelong Digital Companions",
-      authors: "Tingyu Wu, Zhisheng Chen, Ziyan Weng, Shuhe Wang, Chenglong Li, Shuo Zhang, Sen Hu, Silin Wu, Qizhen Lan†, Huacan Wang, Ronghao Chen",
+      authors: "Tingyu Wu, Zhisheng Chen, Ziyan Weng, Shuhe Wang, Shuo Zhang, Sen Hu, Silin Wu, Qizhen Lan†, Huacan Wang, Ronghao Chen",
       venue: "ACL 2026 Main Conference",
       contribution: "† Corresponding author",
       note: "Oral Presentation",
@@ -282,6 +287,7 @@ window.SITE_CONTENT = {
       year: "2026",
       items: [
         {
+          id: "valuspec",
           title: "ValuSpec: Plug-and-Play Candidate Valuation before Target Verification for Tree-Based Speculative Decoding",
           authors: "Liang He, SiYuan Ma, Qishi Zhan, Yongqi Fan, Mingyu Cao, Qizhen Lan, Zhaolu Kang, Xilu Wang",
           venue: "NeurIPS 2026 (Poster)"

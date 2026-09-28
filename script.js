@@ -5,6 +5,7 @@
   }
 
   const ownName = content.profile.name;
+  const selectedPublicationLimit = 10;
 
   function $(id) {
     return document.getElementById(id);
@@ -434,7 +435,14 @@
         papers.className = "research-papers";
         papers.setAttribute("aria-label", `Representative work in ${item.title}`);
         item.papers.forEach((paper) => {
-          papers.append(createLink(paper, "research-paper-link", { icon: false }));
+          const link = createLink(paper, "research-paper-link", { icon: false });
+          if (paper.url.startsWith("#")) {
+            link.addEventListener("click", () => {
+              const archive = $(paper.url.slice(1))?.closest("details");
+              if (archive) archive.open = true;
+            });
+          }
+          papers.append(link);
         });
         copy.append(papers);
       }
@@ -447,9 +455,10 @@
   function renderSelectedPublications() {
     const target = $("selected-publications");
     target.replaceChildren();
-    content.selectedPublications.forEach((pub) => {
+    content.selectedPublications.slice(0, selectedPublicationLimit).forEach((pub) => {
       const article = document.createElement("article");
       article.className = "publication";
+      if (pub.id) article.id = pub.id;
 
       const image = document.createElement("img");
       image.className = "pub-image";
@@ -500,51 +509,66 @@
 
   function renderOtherPublications() {
     const target = $("other-publications");
-    const title = $("other-publications-title");
+    const archive = $("more-publications");
+    const label = $("more-publications-label");
     target.replaceChildren();
-    const hasItems = content.otherPublications.some((yearGroup) => yearGroup.items && yearGroup.items.length);
-    if (title) {
-      title.hidden = !hasItems;
-    }
-    if (!hasItems) {
+    const publications = [
+      ...content.selectedPublications.slice(selectedPublicationLimit),
+      ...content.otherPublications.flatMap(group => group.items || [])
+    ];
+    archive.hidden = publications.length === 0;
+    if (!publications.length) {
       return;
     }
+    const updateLabel = () => {
+      label.textContent = archive.open ? "Show fewer publications" : `Show more publications (${publications.length})`;
+    };
+    archive.addEventListener("toggle", updateLabel);
+    updateLabel();
     const list = document.createElement("ol");
     list.className = "compact-list";
-    content.otherPublications.forEach((yearGroup) => {
-      (yearGroup.items || []).forEach((pub) => {
-        const item = document.createElement("li");
-        if (pub.image) {
-          item.className = "compact-publication";
-          const image = document.createElement("img");
-          image.className = "compact-image";
-          image.src = pub.image;
-          image.alt = `${pub.title} preview`;
-          image.loading = "lazy";
-          item.append(image);
-        }
+    publications.forEach((pub) => {
+      const item = document.createElement("li");
+      if (pub.id) item.id = pub.id;
+      if (pub.image) {
+        item.className = "compact-publication";
+        const image = document.createElement("img");
+        image.className = "compact-image";
+        image.src = pub.image;
+        image.alt = `${pub.title} preview`;
+        image.loading = "lazy";
+        item.append(image);
+      }
 
-        const copy = document.createElement("div");
-        const title = document.createElement("span");
-        title.className = "compact-title";
-        title.textContent = pub.title;
-        const meta = document.createElement("span");
-        meta.className = "compact-meta";
-        meta.append(highlightAuthor(`${pub.authors}. ${pub.venue}. `));
+      const copy = document.createElement("div");
+      const title = document.createElement("span");
+      title.className = "compact-title";
+      title.textContent = pub.title;
+      const meta = document.createElement("span");
+      meta.className = "compact-meta";
+      const description = [pub.authors, pub.venue, pub.contribution, pub.note].filter(Boolean).join(". ");
+      meta.append(highlightAuthor(`${description}. `));
 
-        copy.append(title, meta);
-        if (pub.links && pub.links.length) {
-          const links = document.createElement("span");
-          links.className = "compact-links";
-          pub.links.forEach((link) => links.append(createLink(link)));
-          meta.append(links);
-        }
+      copy.append(title, meta);
+      if (pub.links && pub.links.length) {
+        const links = document.createElement("span");
+        links.className = "compact-links";
+        pub.links.forEach((link) => links.append(createLink(link)));
+        meta.append(links);
+      }
 
-        item.append(copy);
-        list.append(item);
-      });
+      item.append(copy);
+      list.append(item);
     });
     target.append(list);
+  }
+
+  function revealPublicationHash() {
+    const publication = $(window.location.hash.slice(1));
+    if (!publication || !publication.closest("#publications")) return;
+    const archive = publication.closest("details");
+    if (archive) archive.open = true;
+    publication.scrollIntoView({ block: "start" });
   }
 
   function renderEntries(items, targetId) {
@@ -639,4 +663,6 @@
   renderAwards();
   renderService();
   bindActiveNavigation();
+  window.addEventListener("hashchange", revealPublicationHash);
+  if (window.location.hash) revealPublicationHash();
 })();

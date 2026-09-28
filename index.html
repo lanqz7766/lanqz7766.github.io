@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="assets/img/favicon.svg?v=20260620-2" type="image/svg+xml" />
     <link rel="alternate icon" href="assets/img/favicon.png?v=20260620" type="image/png" sizes="96x96" />
-    <link rel="stylesheet" href="styles.css?v=20260925-2" />
+    <link rel="stylesheet" href="styles.css?v=20260927" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -68,8 +68,14 @@
           </div>
           <div id="selected-publications" class="publication-list"></div>
 
-          <h3 id="other-publications-title" class="subsection-title">Other Publications</h3>
-          <div id="other-publications" class="compact-publications"></div>
+          <details id="more-publications" class="publications-archive">
+            <summary class="publications-toggle">
+              <span id="more-publications-label">Show more publications</span>
+              <span class="news-toggle-arrow" aria-hidden="true">↓</span>
+            </summary>
+            <h3 class="subsection-title">Other Publications</h3>
+            <div id="other-publications" class="compact-publications"></div>
+          </details>
         </section>
 
         <section id="education" class="section">
@@ -127,7 +133,7 @@
       </p>
     </footer>
 
-    <script src="data/content.js?v=20260925"></script>
-    <script src="script.js?v=20260821-2"></script>
+    <script src="data/content.js?v=20260927"></script>
+    <script src="script.js?v=20260927"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   siteMeta: {
-    lastUpdated: "September 28, 2026"
+    lastUpdated: "October 13, 2026"
   },
 
   profile: {
@@ -60,7 +60,7 @@ window.SITE_CONTENT = {
 
   about: [
     "I am currently a Postdoctoral Research Fellow in the McWilliams School of Biomedical Informatics at UTHealth Houston, working with Dr. Xiaoqian Jiang. I received my Ph.D. in Computer Science from the University of Alabama at Birmingham, where I worked with Dr. Qing Tian.",
-    "My work sits at the intersection of medical imaging, efficient vision models, and agentic AI. I am especially interested in problems where algorithm design meets real workflows, including deployable medical AI, trustworthy evaluation, efficient models under resource constraints, and clinical agents for biomedical reasoning and care delivery. I am also exploring startup and product opportunities around clinical AI systems."
+    "I work on agentic AI and efficient vision models, with a focus on medical imaging and clinical workflows. My projects span evidence-grounded neuroimaging evaluation, tool-using clinical agents, and model compression. This builds on my doctoral research in visual perception for autonomous driving. My work on medical world models includes a survey submitted to TMLR on action-aware simulation and planning. I am also interested in vision-language-action (VLA) systems for embodied medical AI and in product opportunities around clinical AI systems."
   ],
 
   collaboration:
@@ -68,8 +68,8 @@ window.SITE_CONTENT = {
 
   researchInterests: [
     {
-      title: "Medical AI",
-      text: "Neuroimaging benchmarks, clinical reasoning, 3D segmentation, and deployable medical AI.",
+      title: "Medical AI & Neuroimaging",
+      text: "BrainTRACE for evidence-grounded MRI reasoning, OpenBrain for auditable parcellation labels, and knowledge distillation for efficient 3D segmentation.",
       papers: [
         { label: "NeurIPS'26 BrainTRACE", url: "#braintrace" },
         { label: "NeurIPS'26 OpenBrain", url: "#openbrain" },
@@ -80,34 +80,29 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      title: "Efficient AI",
-      text: "Knowledge distillation, model compression, and efficient LLM inference.",
+      title: "Agentic AI & Workflows",
+      text: "Tool-using clinical agents in ClinAgent (research prototype), autonomous workflow search in ComfySearch, and difficulty-aware multi-agent orchestration in DAAO. Related work includes efficient LLM inference in ValuSpec.",
       papers: [
+        { label: "EMNLP'26 ComfySearch", url: "https://arxiv.org/pdf/2601.04060" },
+        { label: "WWW'26 DAAO", url: "https://github.com/AutoAgents-ai/DAAO" },
         { label: "NeurIPS'26 ValuSpec", url: "#valuspec" },
+        { label: "ACL'26 KnowMe-Bench", url: "https://arxiv.org/pdf/2601.04745" }
+      ]
+    },
+    {
+      title: "Efficient Perception for Autonomous Driving",
+      text: "My doctoral work on knowledge distillation, model compression, and robust object detection, with a focus on preserving useful visual features under compute constraints.",
+      papers: [
         { label: "ICCV'25 ACAM-KD", url: "https://arxiv.org/pdf/2503.06307" },
         { label: "WACV'24 GKD", url: "https://openaccess.thecvf.com/content/WACV2024/papers/Lan_Gradient-Guided_Knowledge_Distillation_for_Object_Detectors_WACV_2024_paper.pdf" },
-        { label: "WACV'25 CLoCKDistill", url: "https://arxiv.org/pdf/2502.10683" },
+        { label: "WACV'26 CLoCKDistill", url: "https://arxiv.org/pdf/2502.10683" },
         { label: "T-IV Adaptive KD", url: "https://par.nsf.gov/servlets/purl/10405166" }
       ]
     },
     {
-      title: "Computer Vision",
-      text: "Detection, tracking, robustness, and task-aware perception.",
-      papers: [
-        { label: "ECCV'26 VIGIL", url: "https://xixiaouab.github.io/VIGIL/" },
-        { label: "WACV'25 DDMR", url: "https://openaccess.thecvf.com/content/WACV2025/papers/Choi_Improving_Deep_Detector_Robustness_via_Detection-Related_Discriminant_Maximization_and_Reorganization_WACV_2025_paper.pdf" },
-        { label: "WACV'24 GKD", url: "https://github.com/lanqz7766/GKD" }
-      ]
-    },
-    {
-      title: "Agentic & Trustworthy AI",
-      text: "Adaptive perception, decision-aware learning, safety, and reliability.",
-      papers: [
-        { label: "WWW'26 DAAO", url: "https://github.com/AutoAgents-ai/DAAO" },
-        { label: "EMNLP'26 ComfySearch", url: "https://arxiv.org/pdf/2601.04060" },
-        { label: "ACL'26 KnowMe-Bench", url: "https://arxiv.org/pdf/2601.04745" },
-        { label: "ECCV'26 VIGIL", url: "https://xixiaouab.github.io/VIGIL/" }
-      ]
+      title: "Medical World Models & VLA",
+      text: "Our survey submitted to TMLR develops a capability and SATO-V evidence framework for medical world models, connecting action-conditioned simulation, counterfactual reasoning, and model-based planning. Vision-language-action (VLA) systems for embodied medical AI remain a related research interest.",
+      papers: [{ label: "Medical World Models (TMLR submission)", url: "#medical-world-models" }]
     }
   ],
 
@@ -178,10 +173,14 @@ window.SITE_CONTENT = {
     {
       id: "braintrace",
       title: "BrainTRACE: Tracing Longitudinal, Multimodal, and Volumetric Evidence in Brain MRI Clinical Reasoning",
-      authors: "Qizhen Lan, Mengchen Fan, Hang Zhang, Jingwei Duan, Moule Lin, Jialin Chen, Baocheng Geng, Xiaoqian Jiang",
+      authors: "Qizhen Lan*, Mengchen Fan*, Hang Zhang*, Jingwei Duan, Moule Lin, Jialin Chen, Baocheng Geng, Xiaoqian Jiang†",
       venue: "NeurIPS 2026 Evaluations & Datasets Track",
-      contribution: "First author",
-      image: "assets/img/BrainTRACE-main.png"
+      contribution: "* Co-first authors · † Corresponding author",
+      image: "assets/img/BrainTRACE-main.png",
+      links: [
+        { label: "Code", url: "https://github.com/lanqz7766/BrainTRACE" },
+        { label: "Dataset", url: "https://huggingface.co/datasets/lanqz7766/BrainTRACE" }
+      ]
     },
     {
       id: "openbrain",
@@ -189,7 +188,11 @@ window.SITE_CONTENT = {
       authors: "Qizhen Lan, Yu-Chun Hsu, Yuxiang Wei, Lijing Zhu, Zenan Sun, Liang He, Lishan Yu, Xiaoqian Jiang",
       venue: "NeurIPS 2026 Evaluations & Datasets Track",
       contribution: "First author",
-      image: "assets/img/OpenBrain-main.png"
+      image: "assets/img/OpenBrain-main.png",
+      links: [
+        { label: "Dataset", url: "https://huggingface.co/datasets/lanqz7766/OpenBrain" },
+        { label: "Conference", url: "https://neurips.cc/virtual/2026/loc/atlanta/poster/139232" }
+      ]
     },
     {
       title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
@@ -286,10 +289,33 @@ window.SITE_CONTENT = {
       year: "2026",
       items: [
         {
+          id: "medical-world-models",
+          title: "Medical World Models: From Static Prediction to Clinically Valid Action-Aware Simulation",
+          venue: "Submitted to Transactions on Machine Learning Research (TMLR), 2026; survey manuscript"
+        },
+        {
+          id: "dramaagent",
+          title: "DramaAgent: Agentic Storytelling Video Generation",
+          authors: "Ting Huang, Biao Wu, Ronghao Chen, Zeyu Zhang, Tengfei Cheng, Qizhen Lan, Huacan Wang, Hao Tang",
+          venue: "AACL-IJCNLP 2026 Main Conference",
+          links: [
+            { label: "Paper", url: "https://arxiv.org/abs/2610.00097" },
+            { label: "Code", url: "https://github.com/AIGeeksGroup/DramaAgent" },
+            { label: "Project", url: "https://aigeeksgroup.github.io/DramaAgent/" }
+          ]
+        },
+        {
+          id: "evidence-faithfulness",
+          title: "Interventional Analysis of Evidence Faithfulness in Generative Cloud Removal",
+          authors: "Yuxi Lu, Kunqi Li, Zhidong Li, Chenya Huang, Biao Wu, Qizhen Lan, Ronghao Chen, Bin Liang",
+          venue: "NeurIPS 2026 XAI4Science Workshop (Non-archival)"
+        },
+        {
           id: "valuspec",
           title: "ValuSpec: Plug-and-Play Candidate Valuation before Target Verification for Tree-Based Speculative Decoding",
           authors: "Liang He, SiYuan Ma, Qishi Zhan, Yongqi Fan, Mingyu Cao, Qizhen Lan, Zhaolu Kang, Xilu Wang",
-          venue: "NeurIPS 2026 (Poster)"
+          venue: "NeurIPS 2026 (Poster)",
+          links: [{ label: "Conference", url: "https://neurips.cc/virtual/2026/loc/sydney/poster/154357" }]
         }
       ]
     },
@@ -380,9 +406,47 @@ window.SITE_CONTENT = {
       period: "May 2025 - Present",
       location: "Houston, Texas, USA",
       detail: "McWilliams School of Biomedical Informatics; supervised by Dr. Xiaoqian Jiang.",
-      summary: "Research on deployable medical AI, efficient vision models, and agentic systems.",
       logo: "assets/img/uthealth-houston-stacked.png",
-      logoAlt: "UTHealth Houston logo"
+      logoAlt: "UTHealth Houston logo",
+      highlights: [
+        {
+          label: "Medical world models",
+          text: "Co-developed a capability and SATO-V evidence framework for medical world models, distinguishing action-conditioned simulation, counterfactual reasoning, and model-based planning in a survey submitted to TMLR."
+        },
+        {
+          label: "Agentic medical AI",
+          text: "Developed ClinAgent, an agentic medical-imaging research platform that orchestrates brain segmentation, longitudinal analysis, and evidence-linked reporting in a unified workflow for physician review."
+        },
+        {
+          label: "Neuroimaging AI infrastructure",
+          text: "Built complementary resources: BrainTRACE evaluates evidence-grounded MRI reasoning on 7,273 scored questions, and OpenBrain supplies 35,838 cases with generated segmentation labels, provenance, and quality scores."
+        },
+        {
+          label: "Efficient medical imaging",
+          text: "Developed compact 3D segmentation through distillation, achieving 93.7% fewer parameters and 3.0× CPU inference speedup while retaining 98.7% of teacher Dice on Mindboggle-101 (npj Health Systems)."
+        },
+        {
+          label: "Autonomous agentic workflows",
+          text: "Co-developed execution-guided workflow generation in ComfySearch, surpassing ComfyMind by 7.5 percentage points (71.5% task completion on 200 ComfyBench tasks), alongside difficulty-aware multi-agent orchestration in DAAO."
+        }
+      ]
+    },
+    {
+      title: "Doctoral Research Assistant",
+      organization: "University of Alabama at Birmingham & Bowling Green State University",
+      period: "Aug 2021 - May 2025",
+      location: "United States",
+      detail: "Advisor: Dr. Qing Tian. BGSU: Aug 2021 - Jan 2024; UAB: Jan 2024 - May 2025.",
+      highlights: [
+        {
+          label: "Efficient visual perception",
+          text: "Developed adaptive teacher-student attention for distillation (ACAM-KD), raising RetinaNet-R50 by 3.8 mAP on COCO 2017 val over the undistilled student without adding inference-time computation."
+        },
+        {
+          label: "Transformer detection for driving scenes",
+          text: "Developed context- and location-aware transformer distillation (CLoCKDistill), boosting DINO-R18 by 6.4 AP points (56.1 to 62.5 COCO-style AP on KITTI) at unchanged inference cost."
+        }
+      ]
     }
   ],
 

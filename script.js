@@ -602,7 +602,7 @@
       }
 
       const main = document.createElement("div");
-      main.className = "entry-main";
+      main.className = item.logo ? "entry-main" : "entry-main entry-main-text";
       if (item.logo) {
         const logo = document.createElement("img");
         logo.className = "entry-logo";
@@ -614,6 +614,19 @@
       main.append(body);
 
       entry.append(period, main);
+      if (item.highlights && item.highlights.length) {
+        const highlights = document.createElement("ul");
+        highlights.className = "entry-highlights";
+        item.highlights.forEach((highlight) => {
+          const li = document.createElement("li");
+          const label = document.createElement("strong");
+          label.textContent = `${highlight.label}: `;
+          li.append(label);
+          appendLinkedText(li, highlight.text);
+          highlights.append(li);
+        });
+        entry.append(highlights);
+      }
       target.append(entry);
     });
   }

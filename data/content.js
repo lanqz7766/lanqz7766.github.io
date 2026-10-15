@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   siteMeta: {
-    lastUpdated: "October 13, 2026"
+    lastUpdated: "October 15, 2026"
   },
 
   profile: {
@@ -110,6 +110,10 @@ window.SITE_CONTENT = {
     {
       year: "2026",
       items: [
+        {
+          date: "Oct",
+          text: "Three papers were accepted to WACV 2027."
+        },
         {
           date: "Sep",
           text: "Three papers were accepted to NeurIPS 2026: BrainTRACE and OpenBrain in the Evaluations & Datasets Track, and ValuSpec as a Poster."

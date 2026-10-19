@@ -60,11 +60,11 @@ window.SITE_CONTENT = {
 
   about: [
     "I am currently a Postdoctoral Research Fellow in the McWilliams School of Biomedical Informatics at UTHealth Houston, working with Dr. Xiaoqian Jiang. I received my Ph.D. in Computer Science from the University of Alabama at Birmingham, where I worked with Dr. Qing Tian.",
-    "I work on agentic AI and efficient vision models, with a focus on medical imaging and clinical workflows. My projects span evidence-grounded neuroimaging evaluation, tool-using clinical agents, and model compression. This builds on my doctoral research in visual perception for autonomous driving. My work on medical world models includes a survey submitted to TMLR on action-aware simulation and planning. I am also interested in vision-language-action (VLA) systems for embodied medical AI and in product opportunities around clinical AI systems."
+    "My research spans computer vision, efficient deep learning, and agentic AI, with a primary focus on medical AI."
   ],
 
   collaboration:
-    "Open to research internships, visiting opportunities, collaborations, and conversations around clinical AI products. If my work overlaps with your interests, or if you simply want to exchange ideas, please feel free to reach out.",
+    "I am on the faculty job market in Computer Science and related areas, with a strong interest in interdisciplinary collaborations in medical AI.",
 
   researchInterests: [
     {

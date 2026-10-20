@@ -68,7 +68,7 @@ window.SITE_CONTENT = {
 
   researchInterests: [
     {
-      title: "Medical AI & Neuroimaging",
+      title: "Medical AI",
       text: "BrainTRACE for evidence-grounded MRI reasoning, OpenBrain for auditable parcellation labels, and knowledge distillation for efficient 3D segmentation.",
       papers: [
         { label: "NeurIPS'26 BrainTRACE", url: "#braintrace" },
@@ -80,7 +80,7 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      title: "Agentic AI & Workflows",
+      title: "Agentic AI",
       text: "Tool-using clinical agents in ClinAgent (research prototype), autonomous workflow search in ComfySearch, and difficulty-aware multi-agent orchestration in DAAO. Related work includes efficient LLM inference in ValuSpec.",
       papers: [
         { label: "EMNLP'26 ComfySearch", url: "https://arxiv.org/pdf/2601.04060" },
@@ -90,7 +90,7 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      title: "Efficient Perception for Autonomous Driving",
+      title: "Efficient Vision",
       text: "My doctoral work on knowledge distillation, model compression, and robust object detection, with a focus on preserving useful visual features under compute constraints.",
       papers: [
         { label: "ICCV'25 ACAM-KD", url: "https://arxiv.org/pdf/2503.06307" },
@@ -98,11 +98,6 @@ window.SITE_CONTENT = {
         { label: "WACV'26 CLoCKDistill", url: "https://arxiv.org/pdf/2502.10683" },
         { label: "T-IV Adaptive KD", url: "https://par.nsf.gov/servlets/purl/10405166" }
       ]
-    },
-    {
-      title: "Medical World Models & VLA",
-      text: "Our survey submitted to TMLR develops a capability and SATO-V evidence framework for medical world models, connecting action-conditioned simulation, counterfactual reasoning, and model-based planning. Vision-language-action (VLA) systems for embodied medical AI remain a related research interest.",
-      papers: [{ label: "Medical World Models (TMLR submission)", url: "#medical-world-models" }]
     }
   ],
 

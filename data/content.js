@@ -194,6 +194,7 @@ window.SITE_CONTENT = {
       ]
     },
     {
+      id: "dcd",
       title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
       authors: "Mengchen Fan, Baocheng Geng, Xi Xiao, Tianyang Wang, Siyuan Mei, Pulin Che, Xiaoqian Jiang†, Qizhen Lan†",
       venue: "MICCAI 2026",
@@ -214,6 +215,7 @@ window.SITE_CONTENT = {
       links: [{ label: "Code", url: "https://github.com/ClinicaAlpha/DPRD-3D-MedSeg" }]
     },
     {
+      id: "time-matters",
       title: "Time Matters: Rethinking Diffusion and Flow Models in One-Step Medical Image Translation",
       authors: "Siyuan Mei, Yanteng Zhang, Yan Xia, Qizhen Lan, Yipeng Sun, Siming Bayer, Zirong Li, Chengze Ye, Daiqi Liu, Xiaoqian Jiang, Fuxin Fan, Yixing Huang, Andreas Maier",
       venue: "MICCAI 2026",
@@ -254,6 +256,7 @@ window.SITE_CONTENT = {
       links: [{ label: "Paper", url: "https://arxiv.org/pdf/2503.06307" }]
     },
     {
+      id: "ddmr",
       title: "Improving Deep Detector Robustness via Detection-Related Discriminant Maximization and Reorganization",
       authors: "Jung Im Choi*, Qizhen Lan*, Qing Tian",
       venue: "WACV 2025",
@@ -454,10 +457,51 @@ window.SITE_CONTENT = {
     }
   ],
 
+  recognitionHighlights: [
+    {
+      venue: "CVPR 2026",
+      title: "Outstanding Reviewer",
+      link: {
+        label: "Official reviewer list",
+        url: "https://cvpr.thecvf.com/Conferences/2026/ProgramCommittee"
+      }
+    },
+    {
+      venue: "MICCAI 2026",
+      title: "Best Paper & Young Scientist Award Shortlist",
+      link: { label: "Time Matters", url: "#time-matters" }
+    },
+    {
+      venue: "MICCAI 2026",
+      title: "Spotlight Presentation",
+      link: { label: "Detail Consistent Stage-Wise Distillation", url: "#dcd" }
+    },
+    {
+      venue: "MICCAI 2026",
+      title: "Oral Presentation",
+      link: { label: "Time Matters", url: "#time-matters" }
+    },
+    {
+      venue: "WACV 2025",
+      title: "Oral Presentation",
+      link: { label: "DDMR · Improving Deep Detector Robustness", url: "#ddmr" }
+    }
+  ],
+
   awards: [
-    "[2026] NSF ACCESS Advanced Computing Allocation, approximately $10,000 GPU resources.",
-    "[2023] Graduate College Professional Development Funds.",
-    "[2018] Analytics Instructional Fee Award."
+    {
+      year: "2026",
+      title: "NSF ACCESS Advanced Computing Allocation",
+      detail: "Approximately $10,000 in GPU resources."
+    },
+    {
+      year: "2023",
+      title: "Graduate College Professional Development Funds"
+    },
+    {
+      year: "2018",
+      title: "Analytics Instructional Fee Award"
+    }
   ],
 
   serviceGroups: [

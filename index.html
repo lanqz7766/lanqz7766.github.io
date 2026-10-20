@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="assets/img/favicon.svg?v=20260620-2" type="image/svg+xml" />
     <link rel="alternate icon" href="assets/img/favicon.png?v=20260620" type="image/png" sizes="96x96" />
-    <link rel="stylesheet" href="styles.css?v=20261019-service-groups" />
+    <link rel="stylesheet" href="styles.css?v=20261020-motion" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -88,9 +88,9 @@
           <div id="teaching-content" class="prose"></div>
         </section>
 
-        <section id="awards" class="section">
-          <h2>Awards & Honors</h2>
-          <ul id="awards-content" class="simple-list"></ul>
+        <section id="awards" class="section" aria-labelledby="awards-title">
+          <h2 id="awards-title">Awards &amp; Recognition</h2>
+          <ul id="recognition-content" class="recognition-grid"></ul>
         </section>
 
         <section id="service" class="section">
@@ -133,7 +133,13 @@
       </p>
     </footer>
 
-    <script src="data/content.js?v=20261019-teaching-cv"></script>
-    <script src="script.js?v=20261019-teaching"></script>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top" hidden>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m6 12 6-6 6 6M12 6v13" />
+      </svg>
+    </button>
+
+    <script src="data/content.js?v=20261020-recognition-compact"></script>
+    <script src="script.js?v=20261020-motion"></script>
   </body>
 </html>

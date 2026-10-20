@@ -274,6 +274,8 @@
 
   function bindActiveNavigation() {
     const links = [...document.querySelectorAll(".nav-list a")];
+    const backToTop = $("back-to-top");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const sectionIds = links.map((link) => link.getAttribute("href")).filter(Boolean);
     const sections = sectionIds
       .map((id) => document.querySelector(id))
@@ -283,18 +285,68 @@
       let activeId = "#Home";
       const offset = 120;
       sections.forEach((section) => {
-        if (section.getBoundingClientRect().top <= offset) {
+        if (section.offsetTop <= window.scrollY + offset) {
           activeId = `#${section.id}`;
         }
       });
       links.forEach((link) => {
-        link.classList.toggle("is-active", link.getAttribute("href") === activeId);
+        const active = link.getAttribute("href") === activeId;
+        link.classList.toggle("is-active", active);
+        if (active) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
       });
+      backToTop.classList.toggle("is-visible", window.scrollY > 500);
     }
 
-    window.addEventListener("scroll", setActive, { passive: true });
+    backToTop.hidden = false;
+    backToTop.addEventListener("click", () => {
+      $("site-name").focus({ preventScroll: true });
+      window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "instant" : "smooth" });
+    });
+
+    let framePending = false;
+    window.addEventListener("scroll", () => {
+      if (framePending) return;
+      framePending = true;
+      window.requestAnimationFrame(() => {
+        setActive();
+        framePending = false;
+      });
+    }, { passive: true });
     window.addEventListener("hashchange", setActive);
+    new ResizeObserver(setActive).observe($("main"));
     setActive();
+  }
+
+  function bindSectionEntrance() {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (reducedMotion.matches) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(({ target, isIntersecting }) => {
+        if (!isIntersecting) return;
+        observer.unobserve(target);
+        if (reducedMotion.matches) return;
+        target.classList.add("is-entering");
+        target.addEventListener("animationend", () => {
+          target.classList.remove("is-entering");
+        }, { once: true });
+      });
+    }, { rootMargin: "0px 0px -24px 0px", threshold: 0 });
+
+    document.querySelectorAll(".content > .section").forEach((section) => {
+      const { top, bottom } = section.getBoundingClientRect();
+      // Keep content already on screen (including direct anchor visits) still.
+      if (top < window.innerHeight && bottom > 0) return;
+      observer.observe(section);
+    });
+    reducedMotion.addEventListener("change", ({ matches }) => {
+      if (!matches) return;
+      observer.disconnect();
+      document.querySelectorAll(".section.is-entering").forEach((section) => {
+        section.classList.remove("is-entering");
+      });
+    });
   }
 
   function renderAbout() {
@@ -642,12 +694,28 @@
   }
 
   function renderAwards() {
-    const target = $("awards-content");
-    target.replaceChildren();
-    content.awards.forEach((award) => {
-      const li = document.createElement("li");
-      appendLinkedText(li, award);
-      target.append(li);
+    const highlights = $("recognition-content");
+    highlights.replaceChildren();
+    [...content.recognitionHighlights, ...content.awards].forEach((recognition) => {
+      const card = document.createElement("li");
+      card.className = "recognition-card";
+
+      const venue = document.createElement("p");
+      venue.className = "recognition-venue";
+      venue.textContent = recognition.venue || recognition.year;
+      const title = document.createElement("h3");
+      title.textContent = recognition.title;
+      card.append(venue, title);
+      if (recognition.link) {
+        card.append(createLink(recognition.link, "recognition-link", { icon: false }));
+      }
+      if (recognition.detail) {
+        const detail = document.createElement("p");
+        detail.className = "recognition-detail";
+        detail.textContent = recognition.detail;
+        card.append(detail);
+      }
+      highlights.append(card);
     });
   }
 
@@ -688,4 +756,5 @@
   bindActiveNavigation();
   window.addEventListener("hashchange", revealPublicationHash);
   if (window.location.hash) revealPublicationHash();
+  bindSectionEntrance();
 })();

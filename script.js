@@ -646,17 +646,15 @@
     service.replaceChildren();
 
     if (content.serviceGroups && content.serviceGroups.length) {
-      content.serviceGroups.forEach((group) => {
+      content.serviceGroups.forEach((group, groupIndex) => {
         const title = document.createElement("h3");
         title.textContent = group.title;
-        const list = document.createElement("ul");
-        list.className = "simple-list";
-        group.items.forEach((item) => {
-          const li = document.createElement("li");
-          li.append(createLink(item));
-          list.append(li);
+        const paragraph = document.createElement("p");
+        group.items.forEach((item, index) => {
+          if (index > 0) paragraph.append(" · ");
+          paragraph.append(createLink(item, groupIndex > 0 ? "service-venue" : undefined));
         });
-        service.append(title, list);
+        service.append(title, paragraph);
       });
       return;
     }
@@ -674,7 +672,6 @@
   renderSelectedPublications();
   renderOtherPublications();
   renderEntries(content.education, "education-content");
-  renderEntries(content.experience, "experience-content");
   renderAwards();
   renderService();
   bindActiveNavigation();

@@ -69,7 +69,7 @@ window.SITE_CONTENT = {
   researchInterests: [
     {
       title: "Medical AI",
-      text: "BrainTRACE for evidence-grounded MRI reasoning, OpenBrain for auditable parcellation labels, and knowledge distillation for efficient 3D segmentation.",
+      text: "I build benchmarks and open data resources for evidence-grounded reasoning in medical imaging, particularly brain MRI. I also develop knowledge distillation methods for efficient 3D segmentation, with an emphasis on accuracy under limited compute.",
       papers: [
         { label: "NeurIPS'26 BrainTRACE", url: "#braintrace" },
         { label: "NeurIPS'26 OpenBrain", url: "#openbrain" },
@@ -81,7 +81,7 @@ window.SITE_CONTENT = {
     },
     {
       title: "Agentic AI",
-      text: "Tool-using clinical agents in ClinAgent (research prototype), autonomous workflow search in ComfySearch, and difficulty-aware multi-agent orchestration in DAAO. Related work includes efficient LLM inference in ValuSpec.",
+      text: "I develop agents that use tools and feedback to carry out multi-step tasks. My research covers medical-imaging prototypes, workflow generation, and adaptive multi-agent coordination. Related work addresses efficient LLM inference through speculative decoding.",
       papers: [
         { label: "EMNLP'26 ComfySearch", url: "https://arxiv.org/pdf/2601.04060" },
         { label: "WWW'26 DAAO", url: "https://github.com/AutoAgents-ai/DAAO" },
@@ -91,7 +91,7 @@ window.SITE_CONTENT = {
     },
     {
       title: "Efficient Vision",
-      text: "My doctoral work on knowledge distillation, model compression, and robust object detection, with a focus on preserving useful visual features under compute constraints.",
+      text: "I develop knowledge distillation and model compression methods for accurate visual perception with less computation. Building on my doctoral research, I focus on compact models for object detection and segmentation, including applications in autonomous driving.",
       papers: [
         { label: "ICCV'25 ACAM-KD", url: "https://arxiv.org/pdf/2503.06307" },
         { label: "WACV'24 GKD", url: "https://openaccess.thecvf.com/content/WACV2024/papers/Lan_Gradient-Guided_Knowledge_Distillation_for_Object_Detectors_WACV_2024_paper.pdf" },
@@ -457,7 +457,7 @@ window.SITE_CONTENT = {
 
   serviceGroups: [
     {
-      title: "Workshop Organization",
+      title: "Program Chair & Organizer",
       items: [
         {
           label: "1st Latent Visual Reasoning (LVR) Workshop at WACV 2027",
@@ -466,56 +466,65 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      title: "Conference Reviewers",
+      title: "Conference Reviewer",
       items: [
         {
-          label: "Annual Conference on Neural Information Processing Systems (NeurIPS) 2026",
+          label: "ICLR 2026",
+          url: "https://iclr.cc/Conferences/2026"
+        },
+        {
+          label: "WWW 2026",
+          url: "https://www2026.thewebconf.org/"
+        },
+        {
+          label: "NeurIPS 2026",
           url: "https://nips.cc/"
         },
         {
-          label: "ACM Multimedia (MM) 2026",
+          label: "ACM MM 2026",
           url: "https://2026.acmmm.org/"
         },
         {
-          label: "ACL Rolling Review (ARR) 2026",
+          label: "ACL ARR 2026 (regular reviewer)",
           url: "https://aclrollingreview.org/"
         },
         {
-          label: "International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2026",
+          label: "MICCAI 2026",
           url: "https://conferences.miccai.org/2026/en/default.asp"
         },
         {
-          label: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026",
+          label: "CVPR 2026",
           url: "https://cvpr2026.thecvf.com/"
         },
         {
-          label: "AAAI Conference on Artificial Intelligence (AAAI), 2025, 2026",
+          label: "AAAI 2025–2026",
           url: "https://aaai.org/conference/aaai/"
         },
         {
-          label: "IEEE International Symposium on Biomedical Imaging (ISBI), 2025, 2026",
+          label: "ISBI 2025–2026",
           url: "https://biomedicalimaging.org/"
         },
         {
-          label: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024–2026",
+          label: "WACV 2024–2026",
           url: "https://wacv.thecvf.com/Conferences/2026"
         }
       ]
     },
     {
-      title: "Journal Reviewers",
+      title: "Journal Reviewer",
       items: [
-        { label: "Nature - npj Digital Medicine", url: "https://www.nature.com/npjdigitalmed/" },
+        { label: "npj Digital Medicine", url: "https://www.nature.com/npjdigitalmed/" },
+        { label: "npj Aging", url: "https://www.nature.com/npjamd/" },
         {
-          label: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+          label: "IEEE TCSVT",
           url: "https://ieee-cas.org/publication/tcsvt"
         },
         {
-          label: "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
+          label: "IEEE TNNLS",
           url: "https://cis.ieee.org/publications/t-neural-networks-and-learning-systems"
         },
         {
-          label: "IEEE Transactions on Multimedia (TMM)",
+          label: "IEEE TMM",
           url: "https://ieee-cas.org/publication/ieee-transactions-multimedia"
         }
       ]

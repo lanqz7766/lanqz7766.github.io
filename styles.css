@@ -733,7 +733,11 @@ h3 {
 }
 
 #service-content h3 {
-  margin-top: 14px;
+  margin: 12px 0 4px;
+}
+
+.service-venue {
+  white-space: nowrap;
 }
 
 .site-footer {

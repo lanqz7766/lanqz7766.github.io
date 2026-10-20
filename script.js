@@ -631,6 +631,16 @@
     });
   }
 
+  function renderTeachingMentoring() {
+    const target = $("teaching-content");
+    target.replaceChildren();
+    content.teachingMentoring.forEach((paragraph) => {
+      const p = document.createElement("p");
+      appendLinkedText(p, paragraph);
+      target.append(p);
+    });
+  }
+
   function renderAwards() {
     const target = $("awards-content");
     target.replaceChildren();
@@ -672,6 +682,7 @@
   renderSelectedPublications();
   renderOtherPublications();
   renderEntries(content.education, "education-content");
+  renderTeachingMentoring();
   renderAwards();
   renderService();
   bindActiveNavigation();

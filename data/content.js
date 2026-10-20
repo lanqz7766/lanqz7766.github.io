@@ -398,6 +398,11 @@ window.SITE_CONTENT = {
     }
   ],
 
+  teachingMentoring: [
+    "My teaching interests include machine learning, computer vision, and medical AI. I aim to connect foundational concepts with hands-on projects, helping students apply computational methods to meaningful problems in medicine and beyond.",
+    "I mentor students in efficient deep learning and medical AI, with corresponding-author publications at MICCAI and WACV. I guide students through problem formulation, experimental design, and scientific writing, helping them develop independent research judgment."
+  ],
+
   experience: [
     {
       title: "Postdoctoral Research Fellow",

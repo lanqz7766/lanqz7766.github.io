@@ -554,7 +554,12 @@
       const body = document.createElement("div");
       const title = document.createElement("h3");
       title.className = "pub-title";
-      title.textContent = pub.title;
+      const paper = pub.links?.find((link) => link.label === "Paper");
+      if (paper) {
+        title.append(createLink({ label: pub.title, url: paper.url }, "pub-title-link", { icon: false }));
+      } else {
+        title.textContent = pub.title;
+      }
 
       const authors = document.createElement("p");
       authors.className = "pub-authors";

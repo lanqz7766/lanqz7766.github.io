@@ -746,9 +746,30 @@ h3 {
 .pub-title {
   margin: 0 0 7px;
   color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 1.35;
+  font-weight: 600;
+  line-height: 1.42;
+  letter-spacing: -0.015em;
+  text-wrap: pretty;
+}
+
+.pub-title-link {
+  color: #254e68;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.pub-title-link:hover,
+.pub-title-link:focus-visible {
+  color: var(--link);
+  text-decoration-line: underline;
+}
+
+.pub-title-link:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .pub-authors,

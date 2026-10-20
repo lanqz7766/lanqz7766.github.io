@@ -177,6 +177,7 @@ window.SITE_CONTENT = {
       contribution: "* Co-first authors · † Corresponding author",
       image: "assets/img/BrainTRACE-main.png",
       links: [
+        { label: "Paper", url: "https://arxiv.org/abs/2610.06571" },
         { label: "Code", url: "https://github.com/lanqz7766/BrainTRACE" },
         { label: "Dataset", url: "https://huggingface.co/datasets/lanqz7766/BrainTRACE" }
       ]
@@ -189,6 +190,7 @@ window.SITE_CONTENT = {
       contribution: "First author",
       image: "assets/img/OpenBrain-main.png",
       links: [
+        { label: "Paper", url: "https://openreview.net/forum?id=dR9OMtUEEC" },
         { label: "Dataset", url: "https://huggingface.co/datasets/lanqz7766/OpenBrain" },
         { label: "Conference", url: "https://neurips.cc/virtual/2026/loc/atlanta/poster/139232" }
       ]
@@ -212,7 +214,10 @@ window.SITE_CONTENT = {
       venue: "MICCAI 2026",
       contribution: "* Co-first authors · † Corresponding authors · Qizhen Lan is last author",
       image: "assets/img/DPRD-main.webp",
-      links: [{ label: "Code", url: "https://github.com/ClinicaAlpha/DPRD-3D-MedSeg" }]
+      links: [
+        { label: "Paper", url: "https://arxiv.org/pdf/2607.04599" },
+        { label: "Code", url: "https://github.com/ClinicaAlpha/DPRD-3D-MedSeg" }
+      ]
     },
     {
       id: "time-matters",
@@ -222,7 +227,10 @@ window.SITE_CONTENT = {
       contribution: "Co-author",
       note: "Nominated & Shortlisted: Best Paper and Young Scientist Award · Early Accept · Oral Presentation",
       image: "assets/img/Time-Matters-main.png",
-      links: [{ label: "Code", url: "https://github.com/siyuan-mei/JiR" }]
+      links: [
+        { label: "Paper", url: "https://papers.miccai.org/miccai-2026/paper/0293_paper.pdf" },
+        { label: "Code", url: "https://github.com/siyuan-mei/JiR" }
+      ]
     },
     {
       title: "KnowMe-Bench: Benchmarking Person Understanding for Lifelong Digital Companions",
@@ -243,6 +251,7 @@ window.SITE_CONTENT = {
       contribution: "Co-author",
       image: "assets/img/VIGIL-main.webp?v=20260619",
       links: [
+        { label: "Paper", url: "https://arxiv.org/pdf/2606.26387" },
         { label: "Project", url: "https://xixiaouab.github.io/VIGIL/" },
         { label: "GitHub", url: "https://github.com/xixiaouab/VIGIL" }
       ]

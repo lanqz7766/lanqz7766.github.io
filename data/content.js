@@ -90,7 +90,7 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      title: "Efficient Vision",
+      title: "Efficient AI",
       text: "I develop knowledge distillation and model compression methods for accurate visual perception with less computation. Building on my doctoral research, I focus on compact models for object detection and segmentation, including applications in autonomous driving.",
       papers: [
         { label: "ICCV'25 ACAM-KD", url: "https://arxiv.org/pdf/2503.06307" },

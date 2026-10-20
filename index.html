@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="assets/img/favicon.svg?v=20260620-2" type="image/svg+xml" />
     <link rel="alternate icon" href="assets/img/favicon.png?v=20260620" type="image/png" sizes="96x96" />
-    <link rel="stylesheet" href="styles.css?v=20261020-visual-polish" />
+    <link rel="stylesheet" href="styles.css?v=20261020-icons-motion" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -77,8 +77,10 @@
               <span id="more-publications-label">Show more publications</span>
               <span class="news-toggle-arrow" aria-hidden="true">↓</span>
             </summary>
-            <h3 class="subsection-title">Other Publications</h3>
-            <div id="other-publications" class="compact-publications"></div>
+            <div id="publications-archive-content" class="archive-content">
+              <h3 class="subsection-title">Other Publications</h3>
+              <div id="other-publications" class="compact-publications"></div>
+            </div>
           </details>
         </section>
 
@@ -143,7 +145,19 @@
       </svg>
     </button>
 
-    <script src="data/content.js?v=20261020-recognition-compact"></script>
-    <script src="script.js?v=20261020-visual-polish"></script>
+    <dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-dialog-title">
+      <div class="figure-dialog-heading">
+        <h2 id="figure-dialog-title"></h2>
+        <button class="figure-dialog-close" type="button" aria-label="Close figure preview" autofocus>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" />
+          </svg>
+        </button>
+      </div>
+      <img id="figure-dialog-image" alt="" />
+    </dialog>
+
+    <script src="data/content.js?v=20261020-efficient-ai"></script>
+    <script src="script.js?v=20261020-efficient-ai"></script>
   </body>
 </html>

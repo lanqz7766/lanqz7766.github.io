@@ -76,6 +76,10 @@ a:hover {
   white-space: nowrap;
 }
 
+.nav-shell {
+  min-width: 0;
+}
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -150,9 +154,9 @@ a:hover {
 
 h1 {
   margin: 0 0 10px;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 1.15;
-  letter-spacing: 0;
+  letter-spacing: -0.02em;
 }
 
 .profile-line {
@@ -351,7 +355,7 @@ h1 {
 }
 
 .section {
-  padding: 10px 0 28px;
+  padding: 12px 0 32px;
   scroll-margin-top: 88px;
 }
 
@@ -375,19 +379,19 @@ h1 {
 }
 
 h2 {
-  margin: 0 0 12px;
-  padding-top: 8px;
+  margin: 0 0 16px;
+  padding-top: 12px;
   border-top: 1px solid var(--line);
   color: var(--text);
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.25;
   letter-spacing: 0;
 }
 
 h3 {
   margin: 20px 0 8px;
-  font-size: 17px;
-  line-height: 1.25;
+  font-size: 18px;
+  line-height: 1.3;
 }
 
 .section-heading-row {
@@ -396,8 +400,8 @@ h3 {
   justify-content: space-between;
   gap: 16px;
   border-top: 1px solid var(--line);
-  padding-top: 8px;
-  margin-bottom: 12px;
+  padding-top: 12px;
+  margin-bottom: 16px;
 }
 
 .section-heading-row h2 {
@@ -520,11 +524,6 @@ h3 {
   margin-top: 8px;
 }
 
-.research-section h2 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
 .research-item {
   min-height: 82px;
   padding: 12px 14px 11px;
@@ -534,17 +533,17 @@ h3 {
 }
 
 .research-item h3 {
-  margin: 0 0 3px;
+  margin: 0 0 8px;
   color: var(--text);
-  font-size: 17px;
-  line-height: 1.25;
+  font-size: 18px;
+  line-height: 1.3;
 }
 
 .research-item p {
   margin: 0;
   color: var(--muted);
-  font-size: 14px;
-  line-height: 1.36;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .research-papers {
@@ -576,7 +575,8 @@ h3 {
   display: grid;
   grid-template-columns: 250px minmax(0, 1fr);
   gap: 20px;
-  padding: 18px 0;
+  align-items: start;
+  padding: 22px 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -588,16 +588,18 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid #d9dee4;
-  border-radius: 2px;
-  background: #ffffff;
-  box-shadow: 0 1px 2px rgba(31, 45, 61, 0.08);
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #fafcfd;
 }
 
 .pub-title {
-  margin: 3px 0 5px;
+  margin: 0 0 7px;
   color: var(--text);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -614,6 +616,12 @@ h3 {
 
 .pub-authors strong {
   color: var(--text);
+}
+
+.pub-authors {
+  color: #626d78;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .pub-note {
@@ -677,10 +685,12 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid #d9dee4;
-  border-radius: 2px;
-  background: #ffffff;
-  box-shadow: 0 1px 2px rgba(31, 45, 61, 0.08);
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #fafcfd;
 }
 
 .compact-title {
@@ -755,7 +765,7 @@ h3 {
 
 .entry h3 {
   margin: 0 0 3px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .entry p {
@@ -1029,7 +1039,7 @@ h3 {
     justify-content: flex-start;
     gap: 14px;
     overflow-x: auto;
-    padding-bottom: 4px;
+    padding: 4px 6px 6px;
     scrollbar-width: none;
   }
 
@@ -1037,14 +1047,83 @@ h3 {
     display: none;
   }
 
+  .nav-shell {
+    position: relative;
+    width: 100%;
+  }
+
+  .nav-shell::before,
+  .nav-shell::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 22px;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .nav-shell::before {
+    left: 0;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  }
+
+  .nav-shell::after {
+    right: 0;
+    background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+  }
+
+  .nav-shell.has-overflow-start::before,
+  .nav-shell.has-overflow-end::after {
+    opacity: 1;
+  }
+
   .home-section {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 18px 16px;
+    padding-top: 24px;
+  }
+
+  .home-copy {
+    display: contents;
+  }
+
+  .profile-heading {
+    grid-column: 2;
+    align-self: center;
+  }
+
+  .home-section h1 {
+    margin-bottom: 6px;
+    font-size: 28px;
+  }
+
+  .profile-line {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  #about-content,
+  .collaboration-line,
+  .profile-links {
+    grid-column: 1 / -1;
+  }
+
+  .collaboration-line,
+  .profile-links {
+    margin: 0;
+  }
+
+  #about-content p:last-child {
+    margin-bottom: 0;
   }
 
   .avatar {
-    width: 190px;
-    height: 190px;
+    width: 88px;
+    height: 88px;
+    align-self: center;
   }
 
   .research-item,

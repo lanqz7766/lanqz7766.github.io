@@ -273,13 +273,22 @@
   }
 
   function bindActiveNavigation() {
-    const links = [...document.querySelectorAll(".nav-list a")];
+    const nav = document.querySelector(".nav-list");
+    const links = [...nav.querySelectorAll("a")];
     const backToTop = $("back-to-top");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const sectionIds = links.map((link) => link.getAttribute("href")).filter(Boolean);
     const sections = sectionIds
       .map((id) => document.querySelector(id))
       .filter(Boolean);
+
+    function updateNavEdges() {
+      nav.parentElement.classList.toggle("has-overflow-start", nav.scrollLeft > 1);
+      nav.parentElement.classList.toggle("has-overflow-end", nav.scrollLeft + nav.clientWidth < nav.scrollWidth - 1);
+    }
+
+    nav.addEventListener("scroll", updateNavEdges, { passive: true });
+    new ResizeObserver(updateNavEdges).observe(nav);
 
     function setActive() {
       let activeId = "#Home";
@@ -295,6 +304,7 @@
         if (active) link.setAttribute("aria-current", "location");
         else link.removeAttribute("aria-current");
       });
+      updateNavEdges();
       backToTop.classList.toggle("is-visible", window.scrollY > 500);
     }
 

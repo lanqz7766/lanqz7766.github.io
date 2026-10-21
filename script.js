@@ -21,7 +21,7 @@
     cv: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h6"/>',
     mail: '<path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/>',
     wechat: '<path d="M3 10.2C3 6.8 6.3 4 10.3 4s7.3 2.8 7.3 6.2-3.3 6.2-7.3 6.2c-.8 0-1.7-.1-2.4-.3L4.8 18l.8-3.1C4 13.8 3 12.1 3 10.2Z"/><path d="M12.2 15.1c0 2.7 2.6 4.9 5.8 4.9.6 0 1.2-.1 1.8-.2l2.4 1.2-.6-2.4c1.1-.9 1.8-2.1 1.8-3.5 0-2.7-2.4-4.8-5.5-4.9"/><path d="M7.8 8.8h.1M12.6 8.8h.1M16 14h.1M19.8 14h.1"/>',
-    paper: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 12h8M8 16h8M8 20h5"/>',
+    paper: '<path class="paper-back" d="M5 5.5H4.5A1.5 1.5 0 0 0 3 7v13A1.5 1.5 0 0 0 4.5 21.5H16"/><g class="paper-sheet"><rect x="7" y="2.5" width="13.5" height="17" rx="1.5"/><path d="M10.5 7h6.5M10.5 11h6.5M10.5 15h4"/></g>',
     code: '<path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m14 5-4 14"/>',
     dataset: '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
     project: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/>',
@@ -64,6 +64,7 @@
     }
     const span = document.createElement("span");
     span.className = "inline-icon";
+    if (name === "paper") span.classList.add("paper-icon");
     span.setAttribute("aria-hidden", "true");
     if (brandIcons[name]) {
       const image = document.createElement("img");
@@ -87,9 +88,11 @@
       a.className = className;
     }
     if (options.icon !== false) {
-      const icon = createIcon(options.icon || iconNameForLink(link));
+      const iconName = options.icon || iconNameForLink(link);
+      const icon = createIcon(iconName);
       if (icon) {
         a.append(icon);
+        if (iconName === "paper") a.classList.add("paper-resource-link");
       }
     }
     a.append(document.createTextNode(link.label));

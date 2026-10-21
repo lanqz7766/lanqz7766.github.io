@@ -200,7 +200,7 @@ window.SITE_CONTENT = {
       title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
       authors: "Mengchen Fan, Baocheng Geng, Xi Xiao, Tianyang Wang, Siyuan Mei, Pulin Che, Xiaoqian Jiang†, Qizhen Lan†",
       venue: "MICCAI 2026",
-      contribution: "† Corresponding authors · Qizhen Lan is last author",
+      contribution: "† Corresponding authors",
       note: "Early Accept \u00b7 Spotlight Presentation",
       image: "assets/img/DCD-main.png?v=20260618-crop",
       links: [
@@ -212,7 +212,7 @@ window.SITE_CONTENT = {
       title: "Displacement Preserving Relational Distillation for Robust Medical Segmentation",
       authors: "Zhicheng Ding*, Xinyu Chu*, Jung Im Choi, Qing Tian†, Tianyu Shi, Xiaoqian Jiang, Lijing Zhu, Qizhen Lan†",
       venue: "MICCAI 2026",
-      contribution: "* Co-first authors · † Corresponding authors · Qizhen Lan is last author",
+      contribution: "* Co-first authors · † Corresponding authors",
       image: "assets/img/DPRD-main.webp",
       links: [
         { label: "Paper", url: "https://arxiv.org/pdf/2607.04599" },

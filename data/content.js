@@ -9,7 +9,7 @@ window.SITE_CONTENT = {
     affiliation: "UThealth-Houston",
     affiliationUrl: "https://www.uth.edu/",
     email: "Qizhen.Lan@uth.tmc.edu",
-    avatar: "assets/img/profile-photo.webp",
+    avatar: "assets/img/profile-photo.png",
     wechat: {
       label: "WeChat",
       qr: "assets/img/wechat-qr-qizhen-lan.jpg",

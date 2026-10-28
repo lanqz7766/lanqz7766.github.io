@@ -64,7 +64,7 @@ window.SITE_CONTENT = {
   ],
 
   collaboration:
-    "I am currently on the faculty job market, with a strong interest in interdisciplinary collaborations in medical AI.",
+    "I am currently on the job market and welcome opportunities in both academia and industry. I am open to collaborations in medical AI and across broader areas of AI.",
 
   researchInterests: [
     {

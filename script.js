@@ -299,6 +299,7 @@
 
   function bindActiveNavigation() {
     const nav = document.querySelector(".nav-list");
+    const header = document.querySelector(".site-header");
     const links = [...nav.querySelectorAll("a")];
     const backToTop = $("back-to-top");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -331,6 +332,9 @@
       });
       updateNavEdges();
       backToTop.classList.toggle("is-visible", window.scrollY > 500);
+      const scrollRange = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollRange > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollRange)) : 0;
+      header.style.setProperty("--reading-progress", progress);
     }
 
     backToTop.hidden = false;
@@ -362,24 +366,29 @@
         if (!isIntersecting) return;
         observer.unobserve(target);
         if (reducedMotion.matches) return;
-        target.classList.add("is-entering");
+        target.classList.add("motion-entry");
         target.addEventListener("animationend", () => {
-          target.classList.remove("is-entering");
+          target.classList.remove("motion-entry");
         }, { once: true });
       });
-    }, { rootMargin: "0px 0px -24px 0px", threshold: 0 });
+    }, { rootMargin: "0px 0px -20px 0px", threshold: 0.06 });
 
-    document.querySelectorAll(".content > .section").forEach((section) => {
-      const { top, bottom } = section.getBoundingClientRect();
+    const targets = document.querySelectorAll(
+      ".content > .section:not(#research):not(#publications):not(#awards), " +
+      "#research > h2, #publications > .section-heading-row, #awards > h2, " +
+      ".research-item, #selected-publications > .publication, .recognition-card"
+    );
+    targets.forEach((target) => {
+      const { top, bottom } = target.getBoundingClientRect();
       // Keep content already on screen (including direct anchor visits) still.
       if (top < window.innerHeight && bottom > 0) return;
-      observer.observe(section);
+      observer.observe(target);
     });
     reducedMotion.addEventListener("change", ({ matches }) => {
       if (!matches) return;
       observer.disconnect();
-      document.querySelectorAll(".section.is-entering").forEach((section) => {
-        section.classList.remove("is-entering");
+      document.querySelectorAll(".motion-entry").forEach((target) => {
+        target.classList.remove("motion-entry");
       });
     });
   }
@@ -574,13 +583,6 @@
 
       body.append(title, authors, venue);
 
-      if (pub.contribution) {
-        const contribution = document.createElement("p");
-        contribution.className = "pub-contribution";
-        contribution.textContent = pub.contribution;
-        body.append(contribution);
-      }
-
       if (pub.note) {
         const note = document.createElement("p");
         note.className = "pub-note";
@@ -635,7 +637,7 @@
       title.textContent = pub.title;
       const meta = document.createElement("span");
       meta.className = "compact-meta";
-      const description = [pub.authors, pub.venue, pub.contribution, pub.note].filter(Boolean).join(". ");
+      const description = [pub.authors, pub.venue, pub.note].filter(Boolean).join(". ");
       meta.append(highlightAuthor(`${description}. `));
 
       copy.append(title, meta);

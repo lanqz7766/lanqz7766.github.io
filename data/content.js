@@ -335,13 +335,13 @@ window.SITE_CONTENT = {
       items: [
         {
           title: "ComfySearch: Autonomous Exploration and Reasoning for ComfyUI Workflows",
-          authors: "Jinwei Su*, Qizhen Lan*, ZEYU WANG, Yinghui Xia, Hairu Wen, Yiqun Duan, Xi Xiao, TIANYU SHI, Yang Jingsong, Lewei He",
-          venue: "EMNLP 2026 Findings (Accepted; * Co-first author)",
+          authors: "Jinwei Su*, Qizhen Lan*, Zeyu Wang, Yinghui Xia, Hairu Wen, Yiqun Duan, Xi Xiao, Yang Jingsong, Lewei He, Tianyu Shi",
+          venue: "EMNLP 2026 Findings (Accepted)",
           links: [{ label: "Paper", url: "https://arxiv.org/pdf/2601.04060" }]
         },
         {
           title: "KnowMeBenchV2: Evidence-Grounded Person-Centric Long-Video Understanding",
-          authors: "Tingyu Wu, CaoGuangyu, Qizhen Lan, Zhisheng Chen, Ziyan Weng, Bingkun Zhu, Miao Su, Chenglong Li, Zhengwei Xie, Huacan Wang, Sen Hu, Haocun Ye, NAN AN, Zaoqu Liu, Ronghao Chen",
+          authors: "Tingyu Wu, Guangyu Cao, Qizhen Lan, Zhisheng Chen, Ziyan Weng, Bingkun Zhu, Miao Su, Chenglong Li, Zhengwei Xie, Huacan Wang, Sen Hu, Haocun Ye, Nan An, Zaoqu Liu, Ronghao Chen",
           venue: "EMNLP 2026 Main Conference (Oral)"
         }
       ]
@@ -359,7 +359,7 @@ window.SITE_CONTENT = {
         {
           title: "Boosting Deep Detector Efficiency and Robustness through Detection Discriminant Reorganization and Compression",
           authors: "Jung Im Choi*, Qizhen Lan*, Qing Tian",
-          venue: "Neural Networks, 2026 (* Co-first author)"
+          venue: "Neural Networks, 2026"
         },
         {
           title: "From Performance to Practice: Knowledge-Distilled Segmentator for On-Premises Clinical Workflows",
@@ -370,7 +370,7 @@ window.SITE_CONTENT = {
         {
           title: "Difficulty-Aware Agentic Orchestration for Query-Specific Multi-Agent Workflows",
           authors: "Jinwei Su*, Qizhen Lan*, Yinghui Xia, Lifan Sun, Weiyou Tian, Tianyu Shi, Xinyuan Song, Lewei He",
-          venue: "WWW 2026 Research Track, 20.1% acceptance rate (* Co-first author)"
+          venue: "WWW 2026 Research Track, 20.1% acceptance rate"
         }
       ]
     },

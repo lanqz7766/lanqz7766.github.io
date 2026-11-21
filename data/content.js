@@ -106,6 +106,11 @@ window.SITE_CONTENT = {
       year: "2026",
       items: [
         {
+          date: "Nov",
+          text: "Awarded the 2027 CPRIT BIG-TCR Postdoctoral Research Fellowship at UTHealth Houston ($84,013/year + travel support).",
+          highlights: ["CPRIT BIG-TCR Postdoctoral Research Fellowship"]
+        },
+        {
           date: "Oct",
           text: "Three papers were accepted to WACV 2027."
         },
@@ -498,6 +503,11 @@ window.SITE_CONTENT = {
   ],
 
   awards: [
+    {
+      year: "2027",
+      title: "CPRIT BIG-TCR Postdoctoral Research Fellowship",
+      detail: "Awarded at UTHealth Houston; $84,013/year + travel support."
+    },
     {
       year: "2026",
       title: "NSF ACCESS Advanced Computing Allocation",

@@ -45,7 +45,7 @@ MapMyVisitors is a hosted third-party service that uses IP-derived approximate g
 
 ## Local Preview
 
-Open `index.html` directly in a browser, or run a small local server:
+Run a small local server so the interactive 3D model can load:
 
 ```bash
 python3 -m http.server 8027 --bind 127.0.0.1
@@ -56,6 +56,19 @@ Then visit:
 ```text
 http://127.0.0.1:8027
 ```
+
+## ClinAgent Workstation
+
+The introduction's layout and soft scene background are in `station.css`.
+`station.js` loads the original model from `assets/scenes/clinagent-station.glb`
+with version-pinned Three.js modules. The transparent `clinagent-poster.webp`
+appears immediately and remains available if 3D loading is unavailable.
+
+Drag horizontally to rotate, or use the two keyboard-accessible arrow buttons.
+Vertical touch swipes still scroll the page. Typing pauses offscreen, while the
+page is hidden, and when reduced motion is requested. Profile content and the
+existing navigation, publication archive and image previews remain in
+`data/content.js` and `script.js`.
 
 ## Publish Later
 

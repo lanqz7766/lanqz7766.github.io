@@ -1,0 +1,297 @@
+/* Water-lily palette and awards presentation; retain the existing typography. */
+:root {
+  --bg: #fdfcf9;
+  --text: #292d33;
+  --muted: #616974;
+  --soft: #7d8691;
+  --line: #dfe5eb;
+  --line-soft: #edf0f3;
+  --link: #184581;
+  --link-hover: #123461;
+  --tint: #f3f7fa;
+}
+::selection { background: #dce9f5; color: #183b63; }
+.site-header { background: rgba(253,252,249,.95); }
+.nav-list a { color: #434c58; }
+.reading-progress { background: #8faecb; }
+.home-section { margin-top: 34px; margin-bottom: 30px; padding-top: 32px; padding-bottom: 32px; gap: 28px; }
+.home-section .avatar { box-shadow: 4px 4px 0 #f0e5d2; }
+.profile-identity { margin-bottom: 24px; }
+.collaboration-line { background: #fcf9f2; border-color: #e8e2d5; border-left-color: #c6b58f; color: #555b62; }
+.home-station::before {
+  inset: -8px 0 22px;
+  background:
+    radial-gradient(ellipse at 62% 39%, rgba(156,196,229,.23), rgba(232,242,249,.15) 46%, transparent 72%),
+    radial-gradient(ellipse at 37% 64%, rgba(251,236,215,.40), transparent 66%);
+}
+/* Feather the ground-shadow edge into the page without changing the model. */
+.home-station .stage canvas, .home-station .stage img {
+  -webkit-mask-image: linear-gradient(#000 94%, transparent);
+  mask-image: linear-gradient(#000 94%, transparent);
+}
+.station-caption { color: #7c8791; }
+.object-actions button { border-color: #d7e2ed; color: #486783; }
+.object-actions button:hover { background: #edf4fa; }
+.section { padding-top: 16px; padding-bottom: 38px; }
+.research-item { border-color: #dfe7ed; background: #fffefd; box-shadow: 0 3px 12px rgba(42,66,94,.025); }
+.research-item::before { background: #b9cbdc; }
+.research-icon { color: #52799e; background: #edf4fa; }
+.research-item:hover .research-icon { background: #e0edf7; }
+.research-item:hover, .research-item:focus-within, .recognition-card:hover, .recognition-card:focus-within {
+  border-color: #b5cce0; box-shadow: 0 9px 24px rgba(42,66,94,.065);
+}
+.publication { padding-top: 24px; padding-bottom: 24px; }
+.publication:first-child { padding-top: 4px; }
+.pub-title-link { color: #184581; }
+.pub-authors { color: var(--muted); }
+.pub-note { color: #456681; }
+.pub-image, .compact-image { background: #fffefd; }
+.publication-figure:hover .pub-image, .publication-figure:focus-visible .pub-image {
+  border-color: #b5cce0; box-shadow: 0 7px 18px rgba(42,66,94,.075);
+}
+.figure-expand-hint { color: #486783; }
+.entry { border-bottom-color: var(--line-soft); }
+.recognition-card { background: #f3f7fa; border-left-color: #91acc7; }
+.recognition-card h3 { color: #303c4c; }
+.recognition-venue { color: #68798a; }
+.footer-widget { background: #fcf9f2; }
+.visitor-map-embed { background: #edf4fa; }
+.back-to-top { border-color: #cdddeb; background: #f5f8fc; color: #184581; box-shadow: 0 3px 10px rgba(42,66,94,.05); }
+.back-to-top:hover { background: #e7f0f8; }
+.figure-dialog-close { color: #184581; background: #eff5fa; }
+@media (max-width: 900px) {
+  .home-section { gap: 20px; }
+}
+@media (max-width: 760px) {
+  .home-section { margin-top: 22px; margin-bottom: 26px; padding: 18px 16px; }
+  .profile-identity { margin-bottom: 20px; }
+  .section { padding-top: 12px; padding-bottom: 30px; }
+  .nav-shell::before { background: linear-gradient(to right, var(--bg), rgba(253,252,249,0)); }
+  .nav-shell::after { background: linear-gradient(to left, var(--bg), rgba(253,252,249,0)); }
+}
+
+/* Awards: one featured fellowship, followed by quiet, scannable records. */
+.recognition-grid { gap: 0 32px; }
+.recognition-card {
+  padding: 18px 0 20px;
+  gap: 6px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.recognition-card .recognition-venue { color: #52718c; }
+.recognition-card .recognition-link,
+.recognition-card .recognition-detail { margin-top: 2px; }
+.recognition-card.recognition-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  column-gap: 18px;
+  padding: 24px;
+  margin: 6px 0 8px;
+  border: 1px solid #dce6ee;
+  border-radius: 8px;
+  background: #edf3f8;
+}
+.recognition-featured .recognition-venue { grid-row: 1 / 3; padding-top: 3px; }
+.recognition-featured h3 { color: #184581; }
+.recognition-featured .recognition-detail { grid-column: 2; }
+.recognition-card:hover, .recognition-card:focus-within {
+  transform: none;
+  box-shadow: none;
+  border-color: #b5cce0;
+}
+@media (max-width: 760px) {
+  .recognition-card.recognition-featured { display: flex; padding: 20px; gap: 8px; }
+  .recognition-featured .recognition-venue { padding-top: 0; }
+}
+
+/* Recognition gets its own quiet row; status wording stays explicit. */
+.pub-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+/* Small stepped corners echo the voxel scene without changing the type. */
+.pub-note-tag {
+  --tag-edge: #b9cddd;
+  --tag-fill: #eaf2f8;
+  --pixel-corners: polygon(
+    0 4px, 4px 4px, 4px 0,
+    calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px,
+    100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px),
+    0 calc(100% - 4px));
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  max-width: 100%;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #284f70;
+  line-height: 1.45;
+}
+.pub-note-tag::before,
+.pub-note-tag::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  clip-path: var(--pixel-corners);
+  transition: background-color 180ms ease;
+}
+.pub-note-tag::before { inset: 0; z-index: -2; background-color: var(--tag-edge); }
+.pub-note-tag::after { inset: 1px; z-index: -1; background-color: var(--tag-fill); }
+.pub-note-shortlist { --tag-fill: #f6efdf; --tag-edge: #dcc99f; color: #71582c; }
+@media (hover: hover) and (pointer: fine) {
+  .pub-note-tag:hover { --tag-edge: #83a6c2; --tag-fill: #dfedf7; }
+  .pub-note-shortlist:hover { --tag-edge: #b59a65; --tag-fill: #f0e6cf; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pub-note-tag::before, .pub-note-tag::after { transition: none; }
+}
+.pub-note-secondary { color: var(--muted); font-weight: 400; }
+
+/* Paper surfaces with quiet, consistent feedback and no hover movement. */
+.research-item,
+.recognition-card.recognition-featured {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background:
+    linear-gradient(125deg, #fffefd, #f5f9fc) padding-box,
+    linear-gradient(125deg, #c3d5e3, #e7e9e7 55%, #dfd3bc) border-box;
+  box-shadow: 0 3px 12px rgba(39,65,87,.035);
+}
+.recognition-card.recognition-featured {
+  padding: 28px;
+  background:
+    linear-gradient(115deg, #f5faff, #edf4f9 55%, #fbf6ea) padding-box,
+    linear-gradient(115deg, #9ebed6, #dce6ed 55%, #d8c9a7) border-box;
+}
+.recognition-featured .recognition-venue {
+  align-self: center;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  min-height: 56px;
+  padding: 0;
+  border: 1px solid #d3dfe8;
+  border-radius: 10px;
+  background: rgba(255,255,255,.65);
+  color: #456681;
+  box-shadow: inset 0 1px 0 #fff;
+}
+.research-item, .recognition-card, .pub-image, .compact-image,
+.collaboration-line, .footer-widget {
+  transition: border-color 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+}
+.research-item:hover, .recognition-card:hover,
+.research-item:focus-within, .recognition-card:focus-within,
+.research-item:hover .research-icon,
+.publication-figure:hover .pub-image,
+.publication-figure:focus-visible .pub-image { transform: none; }
+.research-item:hover::before,
+.research-item:focus-within::before { transform: scaleX(.6); }
+.research-item:focus-within,
+.recognition-card.recognition-featured:focus-within,
+.publication-figure:focus-visible .pub-image {
+  border-color: #abc2d5;
+  box-shadow: 0 5px 16px rgba(39,65,87,.065);
+}
+.recognition-card:not(.recognition-featured):focus-within,
+.publication:focus-within, .compact-publication:focus-within,
+.compact-list > li:focus-within { background-color: #f3f7fa; box-shadow: none; }
+@media (hover: hover) and (pointer: fine) {
+  .research-item:hover,
+  .recognition-card.recognition-featured:hover,
+  .publication-figure:hover .pub-image {
+    border-color: #abc2d5;
+    box-shadow: 0 5px 16px rgba(39,65,87,.065);
+  }
+  .recognition-card:not(.recognition-featured):hover,
+  .publication:hover, .compact-publication:hover,
+  .compact-list > li:hover { background-color: #f3f7fa; box-shadow: none; }
+  .collaboration-line:hover, .footer-widget:hover { border-color: #c3d2de; }
+}
+@media (max-width: 760px) {
+  .recognition-card.recognition-featured { padding: 22px; }
+  .recognition-featured .recognition-venue {
+    align-self: flex-start;
+    width: auto;
+    min-height: 0;
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .research-item, .recognition-card, .pub-image, .compact-image,
+  .collaboration-line, .footer-widget { transition: none; }
+}
+
+/* Pixel details for awards; framing stays behind the readable content. */
+.recognition-grid {
+  --award-corners: polygon(0 6px, 6px 6px, 6px 0,
+    calc(100% - 6px) 0, calc(100% - 6px) 6px, 100% 6px,
+    100% calc(100% - 6px), calc(100% - 6px) calc(100% - 6px),
+    calc(100% - 6px) 100%, 6px 100%, 6px calc(100% - 6px), 0 calc(100% - 6px));
+  --year-corners: polygon(0 3px, 3px 3px, 3px 0,
+    calc(100% - 3px) 0, calc(100% - 3px) 3px, 100% 3px,
+    100% calc(100% - 3px), calc(100% - 3px) calc(100% - 3px),
+    calc(100% - 3px) 100%, 3px 100%, 3px calc(100% - 3px), 0 calc(100% - 3px));
+}
+.recognition-card { position: relative; }
+.recognition-card.recognition-featured,
+.recognition-card.recognition-featured:is(:hover, :focus-within) {
+  isolation: isolate;
+  border-color: transparent;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.recognition-featured::before, .recognition-featured::after,
+.recognition-card .recognition-venue::before, .recognition-card .recognition-venue::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  transition: background-color 220ms ease;
+}
+.recognition-featured::before {
+  inset: 0; z-index: -2; clip-path: var(--award-corners);
+  background-color: #b9cddd;
+}
+.recognition-featured::after {
+  inset: 1px; z-index: -1; clip-path: var(--award-corners);
+  background: linear-gradient(115deg, #f5faff, #edf4f9 55%, #fbf6ea);
+}
+.recognition-card .recognition-venue {
+  position: relative; isolation: isolate;
+  border: 0; border-radius: 0; background: transparent; box-shadow: none;
+}
+.recognition-card:not(.recognition-featured) .recognition-venue { padding: 4px 8px; }
+.recognition-card .recognition-venue::before {
+  inset: 0; z-index: -2; clip-path: var(--year-corners); background-color: #d3dfe8;
+}
+.recognition-card .recognition-venue::after {
+  inset: 1px; z-index: -1; clip-path: var(--year-corners); background-color: #f6f9fb;
+}
+.recognition-card:not(.recognition-featured)::after {
+  content: ""; position: absolute; width: 4px; height: 4px;
+  left: 0; bottom: -2px; background: #b9cddd; pointer-events: none;
+}
+.recognition-featured:focus-within::before { background-color: #91afc5; }
+@media (hover: hover) and (pointer: fine) {
+  .recognition-featured:hover::before { background-color: #91afc5; }
+  .recognition-card:hover .recognition-venue::before { background-color: #abc2d5; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .recognition-featured::before, .recognition-featured::after,
+  .recognition-card .recognition-venue::before, .recognition-card .recognition-venue::after {
+    transition: none;
+  }
+}

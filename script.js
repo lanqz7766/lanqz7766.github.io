@@ -586,7 +586,19 @@
       if (pub.note) {
         const note = document.createElement("p");
         note.className = "pub-note";
-        note.textContent = pub.note;
+        pub.note.split(/\s*·\s*/).forEach((label, index) => {
+          if (index) note.append(" ");
+          const item = document.createElement("span");
+          if (["Oral Presentation", "Spotlight Presentation"].includes(label)) {
+            item.className = "pub-note-tag";
+          } else if (label.startsWith("Nominated & Shortlisted:")) {
+            item.className = "pub-note-tag pub-note-shortlist";
+          } else {
+            item.className = "pub-note-secondary";
+          }
+          item.textContent = label;
+          note.append(item);
+        });
         body.append(note);
       }
 
@@ -850,9 +862,18 @@
   function renderAwards() {
     const highlights = $("recognition-content");
     highlights.replaceChildren();
-    [...content.recognitionHighlights, ...content.awards].forEach((recognition) => {
+    const fellowship = content.awards.find((award) =>
+      award.title === "CPRIT BIG-TCR Postdoctoral Research Fellowship"
+    );
+    const ordered = [
+      ...(fellowship ? [fellowship] : []),
+      ...content.recognitionHighlights,
+      ...content.awards.filter((award) => award !== fellowship)
+    ];
+    ordered.forEach((recognition) => {
       const card = document.createElement("li");
       card.className = "recognition-card";
+      if (recognition === fellowship) card.classList.add("recognition-featured");
 
       const venue = document.createElement("p");
       venue.className = "recognition-venue";
@@ -878,16 +899,44 @@
     service.replaceChildren();
 
     if (content.serviceGroups && content.serviceGroups.length) {
-      content.serviceGroups.forEach((group, groupIndex) => {
-        const title = document.createElement("h3");
-        title.textContent = group.title;
-        const paragraph = document.createElement("p");
-        group.items.forEach((item, index) => {
-          if (index > 0) paragraph.append(" · ");
-          paragraph.append(createLink(item, groupIndex > 0 ? "service-venue" : undefined));
-        });
-        service.append(title, paragraph);
+      const [workshop, ...reviewGroups] = content.serviceGroups;
+      const organization = document.createElement("div");
+      organization.className = "service-workshop";
+      const label = document.createElement("h3");
+      label.textContent = "Workshop Organization";
+      organization.append(label);
+      workshop.items.forEach((item) => {
+        const name = document.createElement("p");
+        name.className = "service-workshop-name";
+        name.append(createLink(item));
+        organization.append(name);
       });
+      const role = document.createElement("p");
+      role.className = "service-workshop-role";
+      role.textContent = workshop.title;
+      organization.append(role);
+      service.append(organization);
+
+      const reviewTitle = document.createElement("h3");
+      reviewTitle.className = "service-review-title";
+      reviewTitle.textContent = "Peer Review";
+      const columns = document.createElement("div");
+      columns.className = "service-review-columns";
+      reviewGroups.forEach((group) => {
+        const column = document.createElement("div");
+        const title = document.createElement("h4");
+        title.textContent = group.title === "Conference Reviewer" ? "Conferences" : "Journals";
+        const list = document.createElement("ul");
+        list.className = "service-review-list";
+        group.items.forEach((item) => {
+          const row = document.createElement("li");
+          row.append(createLink(item, "service-venue"));
+          list.append(row);
+        });
+        column.append(title, list);
+        columns.append(column);
+      });
+      service.append(reviewTitle, columns);
       return;
     }
 

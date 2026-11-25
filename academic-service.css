@@ -1,0 +1,71 @@
+/* Academic service: workshop feature and responsive review columns. */
+#service-content .service-workshop {
+  position: relative;
+  padding: 0 0 26px 20px;
+  border-bottom: 1px solid #e2e7e9;
+}
+.service-workshop::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: #9bb7cc;
+}
+#service-content .service-workshop h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #637180;
+}
+#service-content .service-workshop-name {
+  margin: 0 0 8px;
+  font-size: 21px;
+  line-height: 1.5;
+  font-weight: bold;
+  max-width: 42em;
+}
+#service-content .service-workshop-role {
+  margin: 0;
+  color: #637180;
+  font-size: 15px;
+}
+#service-content .service-review-title { margin: 24px 0 16px; }
+.service-review-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.service-review-columns > div { min-width: 0; }
+.service-review-columns h4 {
+  margin: 0 0 10px;
+  color: #637180;
+  font-size: 16px;
+  font-weight: normal;
+}
+#service-content .service-review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.service-review-list li { position: relative; padding: 3px 0 3px 14px; line-height: 1.65; }
+.service-review-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 3px;
+  height: 3px;
+  background: #bccbd5;
+}
+#service-content .service-venue { white-space: normal; }
+#service-content a { transition: color 180ms ease, text-decoration-color 180ms ease; }
+#service-content a:focus-visible { outline: 2px solid #184581; outline-offset: 4px; }
+@media (max-width: 760px) {
+  .service-review-columns { grid-template-columns: 1fr; gap: 24px; }
+  #service-content .service-workshop-name { font-size: 19px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #service-content a { transition: none; }
+}

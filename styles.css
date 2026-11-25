@@ -102,6 +102,7 @@ a:hover {
 
 .nav-list a {
   position: relative;
+  white-space: nowrap;
   color: #333940;
   transition: color 180ms ease;
 }

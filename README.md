@@ -79,6 +79,12 @@ remains plain secondary text. Recognition labels have small stepped pixel
 corners, with a subtle edge/fill change on hover and no movement. Awards
 use matching stepped frames and venue/year labels, with tiny square divider
 endpoints.
+`fellowship-year.js` / `.css` restore the readable continuous-line year from the
+approved study, scoped to the featured fellowship. Its ink varies by at most 4%;
+the year and card do not move. Reduced motion renders a static year; animation
+pauses offscreen and in hidden tabs. Plain text remains available to assistive
+technology and without JavaScript.
+
 The awards renderer in `script.js` places the existing CPRIT fellowship first;
 other records remain in a responsive two-column list (one column on mobile).
 Facts, titles, amounts and links remain in `data/content.js`.
